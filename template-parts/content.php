@@ -7,53 +7,63 @@
  * @package geist
  */
 
+$author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $args = array( 'class' => 'author-profile-image' ) );
+
+$categories = get_the_category();
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+<article class="post-card
+    <?php if ( has_post_thumbnail() == false ) { ?>
+        no-image
+    <?php } ?>
+">
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				geist_posted_on();
-				geist_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+    <?php if ( has_post_thumbnail() ) { ?>
+    <a class="post-card-image-link" href="<?php the_permalink(); ?>">
+        <?php the_post_thumbnail('medium',array('class' => 'post-card-image')); ?>
+    </a>
+    <?php } ?>
 
-	<?php geist_post_thumbnail(); ?>
+    <div class="post-card-content">
 
-	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'geist' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
+        <a class="post-card-content-link" href="<?php the_permalink(); ?>">
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'geist' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+            <header class="post-card-header">
+                <?php
+                foreach($categories as $category){
+                	echo '<span class="post-card-tags">';
+                    echo $category->name . ' ';
+                    echo '</span>';
+                }
+                ?>
+                <h2 class="post-card-title"><?php echo get_the_title(); ?></h2>
+            </header>
 
-	<footer class="entry-footer">
-		<?php geist_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+            <section class="post-card-excerpt">
+                <p><?php the_excerpt(); ?></p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                    	<?php the_author(); ?>
+                    </div>
+
+                    <?php if( $author_avatar ){ ?>
+                        <?php echo $author_avatar; ?>
+                    <?php }else{ ?>
+                        <a href="{{url}}" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
+                    <?php } ?>
+                </li>
+            </ul>
+
+        </footer>
+
+    </div><!-- {{!--/.post-card-content--}} -->
+
+</article>
