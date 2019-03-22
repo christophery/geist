@@ -34,7 +34,7 @@ $blog_description = get_bloginfo( 'description' );
             </h1>
             <h2 class="site-description"><?php echo $blog_description; ?></h2>
         </div>
-        <!-- {{> "site-nav"}} -->
+        <?php get_template_part('template-parts/site-nav'); ?>
     </div>
 </header>
 
