@@ -27,9 +27,9 @@ $post_url = get_the_permalink();
             <?php get_template_part('template-parts/icons/facebook'); ?>
         </a>
     </div>
-    <!-- <progress id="reading-progress" class="progress" value="0">
+    <progress id="reading-progress" class="progress" value="0">
         <div class="progress-container">
             <span class="progress-bar"></span>
         </div>
-    </progress> -->
+    </progress>
 </div>

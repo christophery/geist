@@ -8,7 +8,7 @@ jQuery(function($) {
     $postContent.fitVids();
     // End fitVids
 
-    //var progressBar = document.querySelector('#reading-progress');
+    var progressBar = document.querySelector('#reading-progress');
     var header = document.querySelector('.floating-header');
     var title = document.querySelector('.post-full-title');
 
@@ -38,7 +38,7 @@ jQuery(function($) {
     function update() {
         var trigger = title.getBoundingClientRect().top + window.scrollY;
         var triggerOffset = title.offsetHeight + 35;
-        //var progressMax = lastDocumentHeight - lastWindowHeight;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
 
         // show/hide floating header
         if (lastScrollY >= trigger + triggerOffset) {
@@ -47,8 +47,8 @@ jQuery(function($) {
             header.classList.remove('floating-active');
         }
 
-        //progressBar.setAttribute('max', progressMax);
-        //progressBar.setAttribute('value', lastScrollY);
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
 
         ticking = false;
     }
