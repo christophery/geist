@@ -18,7 +18,8 @@ $blog_description = get_bloginfo( 'description' );
         <?php
         wp_nav_menu( array(
             'theme_location' => 'menu-1',
-            'menu_class'        => 'nav',
+            'menu_class'     => 'nav',
+            'depth'          => 1
         ) );
         ?>
     </div>
