@@ -2,9 +2,9 @@
     <div class="floating-header-logo">
         <a href="{{@site.url}}">
             <?php if ( get_header_image() ){ ?>
-                <img src="<?php header_image(); ?>" alt="<?php echo $blog_name; ?> icon" />
+                <img src="<?php header_image(); ?>" alt="<?php echo get_bloginfo( 'name' ); ?> icon" />
             <?php } ?>
-            <span><?php echo $blog_name; ?></span>
+            <span><?php echo get_bloginfo( 'name' ); ?></span>
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
