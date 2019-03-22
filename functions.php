@@ -121,6 +121,7 @@ add_action( 'widgets_init', 'geist_widgets_init' );
  */
 function geist_scripts() {
 	wp_enqueue_style( 'geist-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'geist-main-css', get_template_directory_uri() . '/assets/built/screen.css', array(),'20190322' );
 
 	wp_enqueue_script( 'geist-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -158,4 +159,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
