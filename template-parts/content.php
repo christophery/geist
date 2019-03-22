@@ -20,7 +20,7 @@ $categories = get_the_category();
 
     <?php if ( has_post_thumbnail() ) { ?>
     <a class="post-card-image-link" href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail('medium',array('class' => 'post-card-image')); ?>
+        <?php the_post_thumbnail('medium_large',array('class' => 'post-card-image')); ?>
     </a>
     <?php } ?>
 

@@ -697,7 +697,8 @@ make sure this only happens on large viewports / desktop-ish devices.
  */
 
 @media (min-width: 795px) {
-    .post-card-large {
+
+    .home .post-card:nth-child(5n + 1) {
         -webkit-box-flex: 1;
             -ms-flex: 1 1 100%;
                 flex: 1 1 100%;
@@ -707,7 +708,7 @@ make sure this only happens on large viewports / desktop-ish devices.
                 flex-direction: row;
     }
 
-    .post-card-large .post-card-image-link {
+    .home .post-card:nth-child(5n + 1) .post-card-image-link {
         position: relative;
         -webkit-box-flex: 1;
             -ms-flex: 1 1 auto;
@@ -715,32 +716,32 @@ make sure this only happens on large viewports / desktop-ish devices.
         border-radius: 5px 0 0 5px;
     }
 
-    .post-card-large .post-card-image {
+    .home .post-card:nth-child(5n + 1) .post-card-image {
         position: absolute;
         width: 100%;
         height: 100%;
     }
 
-    .post-card-large .post-card-content {
+    .home .post-card:nth-child(5n + 1) .post-card-content {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 357px;
                 flex: 0 1 357px;
     }
 
-    .post-card-large h2 {
+    .home .post-card:nth-child(5n + 1) h2 {
         font-size: 2.6rem;
     }
 
-    .post-card-large p {
+    .home .post-card:nth-child(5n + 1) p {
         font-size: 1.8rem;
         line-height: 1.55em;
     }
 
-    .post-card-large .post-card-content-link {
+    .home .post-card:nth-child(5n + 1) .post-card-content-link {
         padding: 30px 40px 0;
     }
 
-    .post-card-large .post-card-meta {
+    .home .post-card:nth-child(5n + 1) .post-card-meta {
         padding: 0 40px 30px;
     }
 }
