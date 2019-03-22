@@ -79,3 +79,6 @@ $blog_description = get_bloginfo( 'description' );
 
     </div>
 </main>
+
+<?php
+get_footer();
