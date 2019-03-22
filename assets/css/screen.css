@@ -766,7 +766,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* 7. Single Post
 /* ---------------------------------------------------------- */
 
-.post-template .site-main,
+.single-post .site-main,
 .page-template .site-main {
     padding-bottom: 4vw;
     background: #fff;
@@ -2099,7 +2099,7 @@ Usage (In Ghost editor):
     max-width: 920px;
 }
 
-.post-template .post-content > p:first-child {
+.single-post .post-content > p:first-child {
     font-size: 1.25em;
     line-height: 1.5em;
 }
