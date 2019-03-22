@@ -62,6 +62,8 @@ $categories = get_the_category();
                 </li>
             </ul>
 
+            <span class="reading-time"><?php echo get_the_date('F d, Y'); ?></span>
+
         </footer>
 
     </div><!-- {{!--/.post-card-content--}} -->
