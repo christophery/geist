@@ -34,7 +34,7 @@ $nextPost = get_next_post();
                     </ul>
                 </div>
                 <footer class="read-next-card-footer">
-                    <a href="<?php echo home_url(); ?>"><?php _e('See all posts', 'geist'); ?> →</a>
+                    <a href="<?php echo home_url(); ?>"><?php _e('See all posts', 'geist'); ?> &#8594;</a>
                 </footer>
             </article>
 
