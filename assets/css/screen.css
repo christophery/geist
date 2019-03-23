@@ -2672,3 +2672,44 @@ Usage (In Ghost editor):
 #content[tabindex="-1"]:focus {
     outline: 0;
 }
+
+/*--------------------------------------------------------------
+# Pagination
+--------------------------------------------------------------*/
+
+.posts-navigation{
+    width: 100%;
+    margin: 10px 1.5vw 40px;
+}
+
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-previous a,
+.nav-next a{
+    padding: 9px 16px;
+    border: 1px solid #aebbc1;
+    border-radius: 20px;
+    color: #738a94;
+    transition: all .2s ease;
+}
+
+.nav-previous a:hover,
+.nav-next a:hover{
+    border-color: #3eb0ef;
+    color: #3eb0ef;
+    text-decoration: none;
+}
+
+.nav-next{
+    order: 1;
+}
+
+.nav-previous{
+    margin-left: 40px;
+    order: 2;
+}

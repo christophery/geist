@@ -67,7 +67,12 @@ $blog_description = get_bloginfo( 'description' );
 
                 endwhile;
 
-                the_posts_navigation();
+                the_posts_navigation(
+                    array(
+                        'prev_text' => __('Older Posts', 'geist'),
+                        'next_text' => __('Newer Posts', 'geist'),
+                    )
+                );
 
             else :
 
