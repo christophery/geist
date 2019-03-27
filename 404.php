@@ -34,7 +34,7 @@ $blog_name = get_bloginfo( 'name' );
                 <section class="error-message">
                     <h1 class="error-code"><?php esc_html_e( '404', 'geist' ); ?></h1>
                     <p class="error-description"><?php esc_html_e( 'Page not found', 'geist' ); ?></p>
-                    <a class="error-link" href="<?php echo home_url(); ?>">Go to the front page →</a>
+                    <a class="error-link" href="<?php echo home_url(); ?>">Go to the front page &#x2192;</a>
                 </section>
             </div>
         </main>
