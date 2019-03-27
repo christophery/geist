@@ -143,3 +143,27 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Estimate time required to read the article
+ * https://www.binarymoon.co.uk/2013/10/wordpress-estimated-reading-time/
+ *
+ * @return string
+ */
+function geist_estimated_reading_time() {
+
+    $post = get_post();
+
+    $words = str_word_count( strip_tags( $post->post_content ) );
+    $minutes = floor( $words / 120 );
+    $seconds = floor( $words % 120 / ( 120 / 60 ) );
+
+    if ( 1 <= $minutes ) {
+        $estimated_time = $minutes . ' min read';
+    } else {
+        $estimated_time = $seconds . ' sec read';
+    }
+
+    return $estimated_time;
+
+}

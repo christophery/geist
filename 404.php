@@ -102,7 +102,7 @@ $blog_name = get_bloginfo( 'name' );
 			        	                </li>
 			        	            </ul>
 
-			        	            <span class="reading-time"><?php echo get_the_date('F d, Y'); ?></span>
+			        	            <span class="reading-time"><?php echo geist_estimated_reading_time(); ?></span>
 
 			        	        </footer>
 
