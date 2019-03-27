@@ -9,9 +9,20 @@
 
 get_header();
 
-$author_avatar = get_avatar( get_the_author_meta( 'ID' ), 100, '', '', $args = array( 'class' => 'author-profile-image' ) );
+//get author ID
+$author_id = get_the_author_meta( 'ID' );
 
+//get avatar
+$author_avatar = get_avatar( $author_id, 100, '', '', $args = array( 'class' => 'author-profile-image' ) );
+
+//get author bio
 $author_bio = get_the_author_meta( 'description' );
+
+//get author website
+$author_website = get_the_author_meta( 'user_url' );
+
+//get number of posts by author
+$author_post_count = count_user_posts($author_id);
 ?>
 
 <?php get_template_part('template-parts/header'); ?>
@@ -26,21 +37,22 @@ $author_bio = get_the_author_meta( 'description' );
                 <h2 class="author-bio"><?php echo $author_bio; ?></h2>
             <?php } ?>
             <div class="author-meta">
-                <!-- {{#if location}}
-                    <div class="author-location">{{location}} <span class="bull">&bull;</span></div>
-                {{/if}} -->
-                <!-- <div class="author-stats">
-                    {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}} <span class="bull">&bull;</span>
-                </div> -->
-                <!-- {{#if website}}
-                    <a class="social-link social-link-wb" href="{{website}}" target="_blank" rel="noopener">{{> "icons/website"}}</a>
-                {{/if}}
-                {{#if twitter}}
-                    <a class="social-link social-link-tw" href="{{twitter_url}}" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-                {{/if}}
-                {{#if facebook}}
-                    <a class="social-link social-link-fb" href="{{facebook_url}}" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-                {{/if}} -->
+                <div class="author-stats">
+                    <?php
+                    if( $author_post_count > 1 ){
+                        printf( esc_html__( '%d posts', 'geist' ), $author_post_count );
+                    }else if( $author_post_count == 1 ){
+                        printf( esc_html__( '%d post', 'geist' ), $author_post_count );
+                    }else{
+                        echo __( 'No posts', 'geist' );
+                        printf( __( 'No posts', 'geist' ) );
+                    }
+                    ?>
+                    <span class="bull">&bull;</span>
+                </div>
+                <?php if( $author_website ){ ?>
+                    <a class="social-link social-link-wb" href="<?php echo $author_website; ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/website'); ?></a>
+                <?php } ?>
                 <a class="social-link social-link-rss" href="<?php bloginfo('rss_url'); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/rss'); ?></a>
             </div>
         </div>
