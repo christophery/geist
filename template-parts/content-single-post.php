@@ -18,10 +18,14 @@ $categories = get_the_category();
                     <time class="post-full-meta-date" datetime="<?php echo get_the_date('F d, Y'); ?>"><?php echo get_the_date('F d, Y'); ?></time>
                     <?php
                     foreach($categories as $category){
-                        echo '<span class="date-divider">/</span>';
-                        echo '<a href="{{url}}">';
+                        //get category url
+                        $category_url = get_category_link( $category->term_id );
+
+                        //output category link + name
+                        echo "<span class='date-divider'>/</span>";
+                        echo "<a href='{$category_url}'>";
                         echo $category->name . ' ';
-                        echo '</a>';
+                        echo "</a>";
                     }
                     ?>
                 </section>
