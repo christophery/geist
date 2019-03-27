@@ -8,46 +8,66 @@
  */
 
 get_header();
+
+//get category
+$category = get_the_category();
+
+//get number of posts in category
+$category_num_posts = $category[0]->category_count;
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
+	<!-- {!--Special header.hbs partial to generate the <header> tag--}} -->
+	<?php get_template_part('template-parts/header'); ?>
+	    <div class="inner">
+	        <?php get_template_part('template-parts/site-nav'); ?>
+	        <div class="site-header-content">
+	            <h1 class="site-title"><?php echo single_term_title(); ?></h1>
+	            <h2 class="site-description">
+	            	<?php
+	            		//check if category description is set
+	            		if( category_description() ){
+	            			//output category description
+	            			echo category_description();
+	            		}else{
+	            			//output number of posts in category
+	            			if( $category_num_posts > 1 ){
+	            				$category_text = printf( esc_html__( 'A collection of %d posts.', 'geist' ), $category_num_posts );
+	            			}else{
+	            				$category_text = printf( esc_html__( 'A collection of %d post.', 'geist' ), $category_num_posts );
+	            			}
+	            		}
+	            	?>
+	            </h2>
+	        </div>
+	    </div>
+	</header>
 
-			<header class="page-header">
+	<main id="site-main" class="site-main outer">
+	    <div class="inner">
+	        <div class="post-feed">
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
+				/* Start the Loop */
+				while ( have_posts() ) :
+					the_post();
+
+					/*
+					 * Include the Post-Type-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+					 */
+					get_template_part( 'template-parts/content', get_post_type() );
+
+				endwhile;
+
+				the_posts_navigation();
 				?>
-			</header><!-- .page-header -->
+	        </div>
+	    </div>
+	</main>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<?php endif; ?>
 
 <?php
-get_sidebar();
 get_footer();
