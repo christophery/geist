@@ -44,7 +44,7 @@ $categories = get_the_category();
                         the_content();
 
                         wp_link_pages( array(
-                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_geist' ),
+                            'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'geist' ),
                             'after'  => '</div>',
                         ) );
                     ?>
