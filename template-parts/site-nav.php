@@ -8,7 +8,7 @@ $blog_description = get_bloginfo( 'description' );
 
 <nav class="site-nav">
     <div class="site-nav-left">
-        <?php if( is_home() ){ ?>
+        <?php if( is_page() || is_single() ){ ?>
             <?php if( $custom_logo_id ){ ?>
                 <a class="site-nav-logo" href="<?php echo home_url(); ?>"><img src="<?php echo $image[0]; ?>" alt="<?php echo $blog_name; ?>" /></a>
             <?php }else{ ?>
