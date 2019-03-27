@@ -767,7 +767,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* ---------------------------------------------------------- */
 
 .single-post .site-main,
-.page-template .site-main {
+.page .site-main {
     padding-bottom: 4vw;
     background: #fff;
 }

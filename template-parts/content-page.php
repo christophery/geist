@@ -9,44 +9,39 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+<!-- {{!-- The big featured header, it uses blog cover image as a BG if available --}} -->
+<header class="site-header outer">
+    <div class="inner">
+        <?php get_template_part('template-parts/site-nav'); ?>
+    </div>
+</header>
 
-	<?php geist_post_thumbnail(); ?>
+<main id="site-main" class="site-main outer">
+    <div class="inner">
 
-	<div class="entry-content">
-		<?php
-		the_content();
+        <article class="post-full
+            <?php if ( has_post_thumbnail() == false ) { ?>
+                no-image
+            <?php } ?>
+        ">
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'geist' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+            <header class="post-full-header">
+                <h1 class="post-full-title"><?php echo get_the_title();?></h1>
+            </header>
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'geist' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
-</article><!-- #post-<?php the_ID(); ?> -->
+            <?php if ( has_post_thumbnail() ) { ?>
+            <figure class="post-full-image">
+                <?php the_post_thumbnail('medium_large',array('class' => 'feature_image')); ?>
+            </figure>
+            <?php } ?>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <?php the_content(); ?>
+                </div>
+            </section>
+
+        </article>
+
+    </div>
+</main>
