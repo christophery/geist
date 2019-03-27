@@ -167,3 +167,25 @@ function geist_estimated_reading_time() {
     return $estimated_time;
 
 }
+
+/**
+ * Change [...] to ... in excerpt
+ */
+
+function new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+/**
+ * Custom excerpt limit
+ * https://codex.wordpress.org/Plugin_API/Filter_Reference/excerpt_length
+ *
+ * @return string
+ */
+
+function geist_custom_excerpt_length( $length ) {
+    return 33; //in words
+}
+
+add_filter( 'excerpt_length', 'geist_custom_excerpt_length', 999 );
