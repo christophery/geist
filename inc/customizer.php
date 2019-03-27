@@ -25,6 +25,60 @@ function geist_customize_register( $wp_customize ) {
 			'render_callback' => 'geist_customize_partial_blogdescription',
 		) );
 	}
+
+	/**
+	 * Social Profiles
+	 */
+
+	$wp_customize->add_section(
+	    'geist_social',
+	    array(
+	        'title'     => 'Social Profiles',
+	        'priority'  => 200
+	    )
+	);
+
+	$wp_customize->add_setting(
+		'geist_social_facebook',
+		array(
+			'transport' => 'refresh',
+			'sanitize_callback' => 'geist_sanitize_uri'
+		)
+	);
+
+	$wp_customize->add_control(
+		'geist_social_facebook',
+		array(
+			'section' => 'geist_social',
+			'label' => 'Facebook',
+			'description' => __( 'Enter the URL of your Facebook page', 'geist' ),
+			'type' => 'url',
+			'input_attrs' => array(
+	            'placeholder' => __( 'https://facebook.com/WordPress', 'geist' ),
+	        )
+		)
+	);
+
+	$wp_customize->add_setting(
+		'geist_social_twitter',
+		array(
+			'transport' => 'refresh',
+			'sanitize_callback' => 'geist_sanitize_uri'
+		)
+	);
+
+	$wp_customize->add_control(
+		'geist_social_twitter',
+		array(
+			'section' => 'geist_social',
+			'label' => 'Twitter',
+			'description' => __( 'Enter the URL of your Twitter profile', 'geist' ),
+			'type' => 'url',
+			'input_attrs' => array(
+	            'placeholder' => __( 'https://twitter.com/cmyee', 'geist' ),
+	        )
+		)
+	);
 }
 add_action( 'customize_register', 'geist_customize_register' );
 
@@ -53,3 +107,15 @@ function geist_customize_preview_js() {
 	wp_enqueue_script( 'geist-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'geist_customize_preview_js' );
+
+
+/**
+ * Sanitize URIs
+ */
+
+function geist_sanitize_uri($uri){
+	if('' === $uri){
+		return '';
+	}
+	return esc_url_raw($uri);
+}

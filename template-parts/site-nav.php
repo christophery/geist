@@ -24,6 +24,14 @@ $blog_description = get_bloginfo( 'description' );
         ?>
     </div>
     <div class="site-nav-right">
+        <div class="social-links">
+            <?php if ( get_theme_mod( 'geist_social_facebook') ){ ?>
+                <a class="social-link social-link-fb" href="<?php echo esc_url( get_theme_mod( 'geist_social_facebook') ); ?>" title="<?php _e( 'Facebook', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/facebook'); ?></a>
+            <?php } ?>
+            <?php if ( get_theme_mod( 'geist_social_twitter') ){ ?>
+                <a class="social-link social-link-tw" href="<?php echo esc_url( get_theme_mod( 'geist_social_twitter') ); ?>" title="<?php _e( 'Twitter', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/twitter'); ?></a>
+            <?php } ?>
+        </div>
         <a class="rss-button" href="<?php bloginfo('rss_url'); ?>" title="RSS" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/rss'); ?></a>
     </div>
 </nav>
