@@ -2735,3 +2735,98 @@ Usage (In Ghost editor):
     margin-left: auto;
     margin-right: auto;
 }
+
+/*--------------------------------------------------------------
+# Comments
+--------------------------------------------------------------*/
+
+#comments{
+    padding: 70px 15vw 50px;
+    font-size: 1.8rem;
+    border: 1px solid #edf4f8;
+    background: #f4f8fb;
+}
+
+#reply-title{
+    color: #15171a;
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.comment-notes{
+    margin-bottom: 1em;
+    color: #738a94;
+    font-size: 1.8rem;
+    line-height: 1.53em;
+    letter-spacing: .2px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#comments label{
+    font-weight: 700;
+}
+
+#comments textarea,
+#comments input[type='text'],
+#comments input[type='email'],
+#comments input[type='url']{
+    width: 100%;
+    margin-top: 8px;
+    padding: 10px;
+    border: 1px solid #dae2e7;
+    color: #738a94;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    transition: border-color .15s linear;
+}
+
+#comments textarea:focus,
+#comments input[type='text']:focus,
+#comments input[type='email']:focus,
+#comments input[type='url']:focus{
+    outline: 0;
+    border-color: #3eb0ef;
+}
+
+.form-submit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#submit{
+    display: inline-block;
+    padding: 0 20px;
+    height: 41px;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 37px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+    background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(color(var(--blue) whiteness(+7%))),
+    color-stop(60%, color(var(--blue) lightness(-7%) saturation(-10%))),
+    color-stop(90%, color(var(--blue) lightness(-7%) saturation(-10%))),
+    to(color(var(--blue) lightness(-4%) saturation(-10%)))
+    );
+    background: linear-gradient(
+    color(var(--blue) whiteness(+7%)),
+    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+    color(var(--blue) lightness(-4%) saturation(-10%))
+    );
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
+            box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
+
+    -webkit-font-smoothing: subpixel-antialiased;
+}
