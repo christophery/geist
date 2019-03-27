@@ -1,19 +1,21 @@
-=== geist ===
+=== Geist ===
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: cmyee
+Tags: custom-logo, custom-menu, featured-images
 
-Requires at least: 4.5
-Tested up to: 4.8
+Requires at least: 5.0
+Tested up to: 5.1.1
 Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+License: GPL3
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-A starter theme called geist.
+Geist is a personal blogging theme for WordPress. This theme is a port of Casper the default theme for the Ghost blogging platform.
 
 == Description ==
 
-Description
+Geist is a personal blogging theme for WordPress. This theme is a port of [Casper](https://github.com/TryGhost/Casper) the default theme for the Ghost blogging platform.
+
+Feel free to [let me know](https://www.twitter.com/cmyee) if you use Geist in one of your websites.
 
 == Installation ==
 
@@ -25,11 +27,11 @@ Description
 
 = Does this theme support any plugins? =
 
-geist includes support for Infinite Scroll in Jetpack.
+Geist includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 1.0.0 - March 27 2019 =
 * Initial release
 
 == Credits ==
