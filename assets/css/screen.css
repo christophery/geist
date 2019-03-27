@@ -100,7 +100,7 @@ body {
 
 @media (min-width: 900px) {
     .home .post-feed,
-    .tag-template .post-feed,
+    .archive .post-feed,
     .author-template .post-feed {
         margin-top: -70px;
         padding-top: 0;
