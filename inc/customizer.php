@@ -38,47 +38,48 @@ function geist_customize_register( $wp_customize ) {
 	    )
 	);
 
-	$wp_customize->add_setting(
-		'geist_social_facebook',
+
+
+	$social_profiles = array(
 		array(
-			'transport' => 'refresh',
-			'sanitize_callback' => 'geist_sanitize_uri'
+			"title" => "Facebook",
+			"id" => "facebook",
+			"description" => "Enter the URL of your Facebook page",
+			"placeholder" => "https://facebook.com/WordPress"
+		),
+		array(
+			"title" => "Twitter",
+			"id" => "twitter",
+			"description" => "Enter the URL of your Twitter profile",
+			"placeholder" => "https://twitter.com/cmyee"
 		)
 	);
 
-	$wp_customize->add_control(
-		'geist_social_facebook',
-		array(
-			'section' => 'geist_social',
-			'label' => 'Facebook',
-			'description' => __( 'Enter the URL of your Facebook page', 'geist' ),
-			'type' => 'url',
-			'input_attrs' => array(
-	            'placeholder' => __( 'https://facebook.com/WordPress', 'geist' ),
-	        )
-		)
-	);
+	foreach ( $social_profiles as $social_profile ) {
 
-	$wp_customize->add_setting(
-		'geist_social_twitter',
-		array(
-			'transport' => 'refresh',
-			'sanitize_callback' => 'geist_sanitize_uri'
-		)
-	);
+	    $wp_customize->add_setting(
+	  		'geist_social_' . $social_profile['id'],
+	  		array(
+	  			'transport' => 'refresh',
+	  			'sanitize_callback' => 'geist_sanitize_uri'
+	  		)
+	  	);
 
-	$wp_customize->add_control(
-		'geist_social_twitter',
-		array(
-			'section' => 'geist_social',
-			'label' => 'Twitter',
-			'description' => __( 'Enter the URL of your Twitter profile', 'geist' ),
-			'type' => 'url',
-			'input_attrs' => array(
-	            'placeholder' => __( 'https://twitter.com/cmyee', 'geist' ),
-	        )
-		)
-	);
+	  	$wp_customize->add_control(
+	  		'geist_social_' . $social_profile['id'],
+	  		array(
+	  			'section' => 'geist_social',
+	  			'label' => $social_profile['title'],
+	  			'description' => __( $social_profile['description'], 'geist' ),
+	  			'type' => 'url',
+	  			'input_attrs' => array(
+	  	            'placeholder' => __( $social_profile['placeholder'], 'geist' ),
+	  	        )
+	  		)
+	  	);
+
+	}
+
 }
 add_action( 'customize_register', 'geist_customize_register' );
 
