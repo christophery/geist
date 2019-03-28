@@ -2737,7 +2737,8 @@ Usage (In Ghost editor):
     margin: 0 0 10px;
 }
 
-.comment-notes{
+.comment-notes,
+.logged-in-as{
     margin-bottom: 1em;
     color: #738a94;
     font-size: 1.8rem;
