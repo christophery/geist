@@ -13,7 +13,9 @@ $author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $args = ar
 $categories = get_the_category();
 
 //get name of first category
-$category_name = $categories[0]->name;
+if( $categories ){
+    $category_name = $categories[0]->name;
+}
 ?>
 
 <article class="post-card
@@ -33,7 +35,9 @@ $category_name = $categories[0]->name;
         <a class="post-card-content-link" href="<?php the_permalink(); ?>">
 
             <header class="post-card-header">
-                <span class="post-card-tags"><?php echo $category_name; ?></span>
+                <?php if( $categories ){ ?>
+                    <span class="post-card-tags"><?php echo $category_name; ?></span>
+                <?php } ?>
                 <h2 class="post-card-title"><?php echo get_the_title(); ?></h2>
             </header>
 
