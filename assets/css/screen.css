@@ -2243,8 +2243,8 @@ Usage (In Ghost editor):
     margin: -2.25em 0 3em;
 }
 
-.wp-block-image{
-    max-width: none;
+.wp-block-image img{
+    max-width: 100%;
 }
 
 .wp-block-button__link{
