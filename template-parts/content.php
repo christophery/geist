@@ -18,11 +18,7 @@ if( $categories ){
 }
 ?>
 
-<article class="post-card
-    <?php if ( has_post_thumbnail() == false ) { ?>
-        no-image
-    <?php } ?>
-">
+<article <?php !has_post_thumbnail() ? post_class('post-card no-image') : post_class('post-card'); ?>>
 
     <?php if ( has_post_thumbnail() ) { ?>
     <a class="post-card-image-link" href="<?php the_permalink(); ?>">

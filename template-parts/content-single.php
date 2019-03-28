@@ -13,11 +13,7 @@ $category_url = get_category_link( $categories[0]->term_id );
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
-        <article class="post-full
-            <?php if ( has_post_thumbnail() == false ) { ?>
-                no-image
-            <?php } ?>
-        ">
+        <article <?php !has_post_thumbnail() ? post_class('post-full no-image') : post_class('post-full'); ?>>
 
             <header class="post-full-header">
                 <section class="post-full-meta">

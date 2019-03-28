@@ -19,11 +19,7 @@
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
-        <article class="post-full
-            <?php if ( has_post_thumbnail() == false ) { ?>
-                no-image
-            <?php } ?>
-        ">
+        <article <?php !has_post_thumbnail() ? post_class('post-full no-image') : post_class('post-full'); ?>>
 
             <header class="post-full-header">
                 <h1 class="post-full-title"><?php echo get_the_title();?></h1>
