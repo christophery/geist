@@ -45,5 +45,6 @@ $blog_description = get_bloginfo( 'description' );
             <?php } ?>
         </div>
         <a class="rss-button" href="<?php bloginfo('rss_url'); ?>" title="RSS" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/rss'); ?></a>
+        <a class="search-button" href="#search">Search</a>
     </div>
 </nav>

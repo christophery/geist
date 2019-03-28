@@ -34,6 +34,13 @@
 
     </div>
 
+    <div id="search" class="search-overlay">
+        <a class="search-overlay-close" href="#"></a>
+        <div class="search-overlay-content">
+            <?php get_search_form(); ?>
+        </div>
+    </div>
+
     <?php wp_footer(); ?>
 
 </body>

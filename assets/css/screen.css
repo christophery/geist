@@ -385,7 +385,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 1.6rem;
 }
 
-.subscribe-button {
+.search-button {
     display: block;
     padding: 4px 10px;
     border: #fff 1px solid;
@@ -394,9 +394,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     line-height: 1em;
     border-radius: 10px;
     opacity: 0.8;
+    margin-left: 15px;
 }
 
-.subscribe-button:hover {
+.search-button:hover {
     text-decoration: none;
     opacity: 1;
 }
@@ -2380,10 +2381,10 @@ Usage (In Ghost editor):
 }
 
 
-/* 10. Subscribe Overlay
+/* 10. Search Overlay
 /* ---------------------------------------------------------- */
 
-.subscribe-overlay {
+.search-overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -2399,7 +2400,7 @@ Usage (In Ghost editor):
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: rgba(0,25,40,0.97);
+    background: rgba(255, 255, 255, 0.97);
     opacity: 0;
     -webkit-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in;
@@ -2410,45 +2411,23 @@ Usage (In Ghost editor):
             backdrop-filter: blur(3px);
 }
 
-.subscribe-overlay:target {
+.search-overlay:target {
     opacity: 1;
     pointer-events: auto;
 }
 
-.subscribe-overlay-content {
+.search-overlay-content {
     position: relative;
     z-index: 9999;
     margin: 0 0 5vw 0;
     padding: 4vw;
     color: #fff;
     text-align: center;
-}
-
-.subscribe-overlay-logo {
-    position: fixed;
-    top: 23px;
-    left: 30px;
-    height: 30px;
-}
-
-.subscribe-overlay-title {
-    display: inline-block;
-    margin: 0 0 10px 0;
     font-size: 6rem;
     line-height: 1.15em;
 }
 
-.subscribe-overlay-description {
-    margin: 0 auto 50px;
-    max-width: 650px;
-    font-family: Georgia, serif;
-    font-size: 3rem;
-    line-height: 1.3em;
-    font-weight: 300;
-    opacity: 0.8;
-}
-
-.subscribe-overlay form {
+.search-overlay form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2459,80 +2438,50 @@ Usage (In Ghost editor):
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 700px;
 }
 
-.subscribe-overlay .form-group {
+.search-overlay .form-group {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
 }
 
-.subscribe-overlay .subscribe-email {
-    display: block;
-    padding: 14px 20px;
+.search-overlay input[type=search] {
     width: 100%;
-    border: none;
-    color: var(--midgrey);
-    font-size: 2rem;
-    line-height: 1em;
-    font-weight: normal;
-    letter-spacing: 0.5px;
-    -webkit-user-select: text;
-       -moz-user-select: text;
-        -ms-user-select: text;
-            user-select: text;
-    border-radius: 8px;
-    -webkit-transition: border-color 0.15s linear;
-    transition: border-color 0.15s linear;
-
+    background: transparent;
+    border: 0;
+    color: #738a94;
     -webkit-appearance: none;
 }
 
-.subscribe-email:focus {
-    outline: 0;
-    border-color: color(var(--lightgrey) l(-2%));
+.search-overlay input[type=search]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #738a94;
 }
 
-.subscribe-overlay button {
-    display: inline-block;
-    margin: 0 0 0 15px;
-    padding: 0 25px;
-    height: 52px;
-    outline: none;
-    color: #fff;
-    font-size: 1.7rem;
-    line-height: 37px;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
-    background: -webkit-gradient(
-    linear,
-    left top, left bottom,
-    from(color(var(--blue) whiteness(+7%))),
-    color-stop(60%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    color-stop(90%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    to(color(var(--blue) lightness(-4%) saturation(-10%)))
-    );
-    background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
-    );
-    border-radius: 8px;
-    -webkit-box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
-            box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
-
-    -webkit-font-smoothing: subpixel-antialiased;
+.search-overlay input[type=search]::-moz-placeholder { /* Firefox 19+ */
+  color: #738a94;
 }
 
-.subscribe-overlay button:active,
-.subscribe-overlay button:focus {
-    background: color(var(--blue) lightness(-9%) saturation(-10%));
+.search-overlay input[type=search]:-ms-input-placeholder { /* IE 10+ */
+  color: #738a94;
 }
 
-.subscribe-overlay-close {
+.search-overlay input[type=search]:-moz-placeholder { /* Firefox 18- */
+  color: #738a94;
+}
+
+.search-overlay input[type=submit] {
+    width: 80px;
+    height: 80px;
+    text-indent: 100px;
+    overflow: hidden;
+    background: transparent url(../img/search.svg) no-repeat center center;
+    background-size: 100%;
+    border: none;
+}
+
+.search-overlay-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -2541,7 +2490,7 @@ Usage (In Ghost editor):
     display: block;
 }
 
-.subscribe-overlay-close:before {
+.search-overlay-close:before {
     content: "";
     position: absolute;
     top: 40px;
@@ -2549,14 +2498,14 @@ Usage (In Ghost editor):
     display: block;
     width: 30px;
     height: 2px;
-    background: #fff;
+    background: #738a94;
     opacity: 0.8;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
 }
 
-.subscribe-overlay-close:after {
+.search-overlay-close:after {
     content: "";
     position: absolute;
     top: 40px;
@@ -2564,14 +2513,14 @@ Usage (In Ghost editor):
     display: block;
     width: 30px;
     height: 2px;
-    background: #fff;
+    background: #738a94;
     opacity: 0.8;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
 }
 
-.subscribe-overlay-close:hover {
+.search-overlay-close:hover {
     cursor: default;
 }
 
