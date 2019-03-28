@@ -28,7 +28,7 @@ $category_num_posts = $category[0]->category_count;
 		        		if( is_category() ){
 		            		echo single_term_title();
 		        		}elseif( is_date() ){
-		        			echo get_the_date( _x( 'F Y', 'monthly archives date format' ) );
+		        			echo get_the_date( _x( 'F Y', 'monthly archives date format', 'geist' ) );
 		        		}else{
 		        			_e( 'Archive', 'geist' );
 		        		}

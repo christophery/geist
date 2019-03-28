@@ -20,7 +20,7 @@ get_header();
 	        	<h1 class="site-title">
 		        	<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for %s', '_s' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Search Results for %s', 'geist' ), '<span>' . get_search_query() . '</span>' );
 					?>
 	        	</h1>
 	        </div>

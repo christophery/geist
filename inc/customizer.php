@@ -89,7 +89,7 @@ function geist_customize_register( $wp_customize ) {
 	  			'label' => $social_profile['title'],
 	  			'type' => 'url',
 	  			'input_attrs' => array(
-	  	            'placeholder' => __( $social_profile['placeholder'], 'geist' ),
+	  	            'placeholder' => $social_profile['placeholder'],
 	  	        )
 	  		)
 	  	);
