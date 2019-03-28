@@ -155,7 +155,7 @@ function geist_estimated_reading_time() {
     if ( 1 <= $minutes ) {
         $estimated_time = $minutes . ' min read';
     } else {
-        $estimated_time = $seconds . ' sec read';
+        $estimated_time = '1 min read';
     }
 
     return $estimated_time;
