@@ -2616,11 +2616,16 @@ Usage (In Ghost editor):
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .site-footer-nav a {
     position: relative;
     margin-left: 20px;
+}
+
+.site-footer-nav a:first-child{
+    margin-left: 0;
 }
 
 .site-footer-nav a:before {
@@ -2648,6 +2653,10 @@ Usage (In Ghost editor):
     }
     .site-footer-nav a:first-child {
         margin-left: 0;
+    }
+
+    .site-footer-nav{
+        justify-content: center;
     }
 }
 
