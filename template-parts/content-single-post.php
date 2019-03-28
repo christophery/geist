@@ -2,6 +2,12 @@
 
 $categories = get_the_category();
 
+//get name of first category
+$category_name = $categories[0]->name;
+
+//get category url
+$category_url = get_category_link( $categories[0]->term_id );
+
 ?>
 
 <main id="site-main" class="site-main outer">
@@ -16,18 +22,8 @@ $categories = get_the_category();
             <header class="post-full-header">
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="<?php echo get_the_date('F d, Y'); ?>"><?php echo get_the_date('F d, Y'); ?></time>
-                    <?php
-                    foreach($categories as $category){
-                        //get category url
-                        $category_url = get_category_link( $category->term_id );
-
-                        //output category link + name
-                        echo "<span class='date-divider'>/</span>";
-                        echo "<a href='{$category_url}'>";
-                        echo $category->name . ' ';
-                        echo "</a>";
-                    }
-                    ?>
+                    <span class='date-divider'>/</span>
+                    <a href='<?php echo $category_url; ?>'><?php echo $category_name; ?></a>
                 </section>
                 <h1 class="post-full-title"><?php echo get_the_title();?></h1>
             </header>
