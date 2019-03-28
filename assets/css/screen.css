@@ -373,6 +373,18 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 1.9rem;
 }
 
+.social-link-instagram svg{
+    height: 1.6rem;
+}
+
+.social-link-github svg{
+    height: 1.7rem;
+}
+
+.social-link-linkedin svg{
+    height: 1.6rem;
+}
+
 .subscribe-button {
     display: block;
     padding: 4px 10px;

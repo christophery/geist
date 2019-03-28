@@ -10,6 +10,18 @@
                     <?php if ( get_theme_mod( 'geist_social_twitter') ){ ?>
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_facebook') ); ?>" target="_blank" rel="noopener"><?php _e( 'Twitter', 'geist' ); ?></a>
                     <?php } ?>
+                    <?php if ( get_theme_mod( 'geist_social_instagram') ){ ?>
+                        <a href="<?php echo esc_url( get_theme_mod( 'geist_social_instagram') ); ?>" target="_blank" rel="noopener"><?php _e( 'Instagram', 'geist' ); ?></a>
+                    <?php } ?>
+                    <?php if ( get_theme_mod( 'geist_social_youtube') ){ ?>
+                        <a href="<?php echo esc_url( get_theme_mod( 'geist_social_youtube') ); ?>" target="_blank" rel="noopener"><?php _e( 'YouTube', 'geist' ); ?></a>
+                    <?php } ?>
+                    <?php if ( get_theme_mod( 'geist_social_github') ){ ?>
+                        <a href="<?php echo esc_url( get_theme_mod( 'geist_social_github') ); ?>" target="_blank" rel="noopener"><?php _e( 'GitHub', 'geist' ); ?></a>
+                    <?php } ?>
+                    <?php if ( get_theme_mod( 'geist_social_linkedin') ){ ?>
+                        <a href="<?php echo esc_url( get_theme_mod( 'geist_social_linkedin') ); ?>" target="_blank" rel="noopener"><?php _e( 'LinkedIn', 'geist' ); ?></a>
+                    <?php } ?>
                     <a href="<?php echo esc_url( __( 'https://chrisyee.ca', 'geist' ) ); ?>" target="_blank" rel="noopener">
                         <?php
                         /* translators: %s: CMS name, i.e. WordPress. */

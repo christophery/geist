@@ -31,6 +31,18 @@ $blog_description = get_bloginfo( 'description' );
             <?php if ( get_theme_mod( 'geist_social_twitter') ){ ?>
                 <a class="social-link social-link-tw" href="<?php echo esc_url( get_theme_mod( 'geist_social_twitter') ); ?>" title="<?php _e( 'Twitter', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/twitter'); ?></a>
             <?php } ?>
+            <?php if ( get_theme_mod( 'geist_social_instagram') ){ ?>
+                <a class="social-link social-link-instagram" href="<?php echo esc_url( get_theme_mod( 'geist_social_instagram') ); ?>" title="<?php _e( 'Instagram', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/instagram'); ?></a>
+            <?php } ?>
+            <?php if ( get_theme_mod( 'geist_social_youtube') ){ ?>
+                <a class="social-link social-link-youtube" href="<?php echo esc_url( get_theme_mod( 'geist_social_youtube') ); ?>" title="<?php _e( 'YouTube', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/youtube'); ?></a>
+            <?php } ?>
+            <?php if ( get_theme_mod( 'geist_social_github') ){ ?>
+                <a class="social-link social-link-github" href="<?php echo esc_url( get_theme_mod( 'geist_social_github') ); ?>" title="<?php _e( 'GitHub', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/github'); ?></a>
+            <?php } ?>
+            <?php if ( get_theme_mod( 'geist_social_linkedin') ){ ?>
+                <a class="social-link social-link-linkedin" href="<?php echo esc_url( get_theme_mod( 'geist_social_linkedin') ); ?>" title="<?php _e( 'LinkedIn', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/linkedin'); ?></a>
+            <?php } ?>
         </div>
         <a class="rss-button" href="<?php bloginfo('rss_url'); ?>" title="RSS" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/rss'); ?></a>
     </div>

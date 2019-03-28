@@ -50,6 +50,30 @@ function geist_customize_register( $wp_customize ) {
 			'id' => 'twitter',
 			'description' => 'Enter the URL of your Twitter profile',
 			'placeholder' => 'https://twitter.com/cmyee'
+		),
+		array(
+			'title' => 'Instagram',
+			'id' => 'instagram',
+			'description' => 'Enter the URL of your Instagram profile',
+			'placeholder' => 'https://instagram.com/username'
+		),
+		array(
+			'title' => 'YouTube',
+			'id' => 'youtube',
+			'description' => 'Enter the URL of your YouTube channel',
+			'placeholder' => 'https://youtube.com/username'
+		),
+		array(
+			'title' => 'GitHub',
+			'id' => 'github',
+			'description' => 'Enter the URL of your GitHub profile',
+			'placeholder' => 'https://github.com/christophery'
+		),
+		array(
+			'title' => 'LinkedIn',
+			'id' => 'linkedin',
+			'description' => 'Enter the URL of your LinkedIn profile',
+			'placeholder' => 'https://ca.linkedin.com/in/christophery'
 		)
 	);
 
