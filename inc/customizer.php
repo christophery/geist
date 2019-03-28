@@ -40,16 +40,16 @@ function geist_customize_register( $wp_customize ) {
 
 	$social_profiles = array(
 		array(
-			"title" => "Facebook",
-			"id" => "facebook",
-			"description" => "Enter the URL of your Facebook page",
-			"placeholder" => "https://facebook.com/WordPress"
+			'title' => 'Facebook',
+			'id' => 'facebook',
+			'description' => 'Enter the URL of your Facebook page',
+			'placeholder' => 'https://facebook.com/WordPress'
 		),
 		array(
-			"title" => "Twitter",
-			"id" => "twitter",
-			"description" => "Enter the URL of your Twitter profile",
-			"placeholder" => "https://twitter.com/cmyee"
+			'title' => 'Twitter',
+			'id' => 'twitter',
+			'description' => 'Enter the URL of your Twitter profile',
+			'placeholder' => 'https://twitter.com/cmyee'
 		)
 	);
 
