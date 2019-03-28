@@ -38,8 +38,6 @@ function geist_customize_register( $wp_customize ) {
 	    )
 	);
 
-
-
 	$social_profiles = array(
 		array(
 			"title" => "Facebook",
