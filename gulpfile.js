@@ -39,18 +39,18 @@ function css(done) {
     ];
 
     pump([
-        src('assets/css/*.css', {sourcemaps: true}),
+        src('css/*.css', {sourcemaps: true}),
         postcss(processors),
-        dest('assets/built/', {sourcemaps: '.'}),
+        dest('built/', {sourcemaps: '.'}),
         livereload()
     ], handleError(done));
 }
 
 function js(done) {
     pump([
-        src('assets/js/*.js', {sourcemaps: true}),
+        src('js/*.js', {sourcemaps: true}),
         uglify(),
-        dest('assets/built/', {sourcemaps: '.'}),
+        dest('built/', {sourcemaps: '.'}),
         livereload()
     ], handleError(done));
 }
@@ -71,7 +71,7 @@ function zipper(done) {
     ], handleError(done));
 }
 
-const watcher = () => watch('assets/css/**', css);
+const watcher = () => watch('css/**', css);
 const build = series(css, js);
 const dev = series(build, serve, watcher);
 
