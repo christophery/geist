@@ -1102,9 +1102,9 @@ Usage (In Ghost editor):
     color: inherit;
 }
 
-.post-full-content .fluid-width-video-wrapper {
+/*.post-full-content .fluid-width-video-wrapper {
     margin: 1.5em 0 3em;
-}
+}*/
 
 .post-full-content hr {
     margin: 4vw 0;
@@ -2245,6 +2245,11 @@ Usage (In Ghost editor):
 
 .wp-block-image img{
     max-width: 100%;
+}
+
+.wp-block-embed-youtube{
+    width: 100%;
+    margin: 1.5em 0 3em !important;
 }
 
 .wp-block-button__link{
