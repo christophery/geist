@@ -507,6 +507,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-title {
     margin-top: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .post-card-content {
@@ -736,6 +738,12 @@ make sure this only happens on large viewports / desktop-ish devices.
                 flex: 0 1 357px;
     }
 
+    .home .post-card.no-image:nth-child(6n + 1) .post-card-content{
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+    }
+
     .home .post-card:nth-child(6n + 1) h2 {
         font-size: 2.6rem;
     }
@@ -821,6 +829,8 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-title {
     margin: 0;
     color: color(var(--darkgrey) l(-5%));
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .date-divider {
@@ -2706,11 +2716,12 @@ Usage (In Ghost editor):
 }
 
 .nav-next{
+    margin: 0 20px;
     order: 1;
 }
 
 .nav-previous{
-    margin-left: 40px;
+    margin: 0 20px;
     order: 2;
 }
 
