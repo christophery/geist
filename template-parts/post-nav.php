@@ -13,6 +13,17 @@ $related = new WP_Query(
     )
 );
 
+$categories = get_the_category();
+
+//get name of first category
+$category_name = $categories[0]->name;
+
+//get category url
+$category_url = get_category_link( $categories[0]->term_id );
+
+//get number of posts in category
+$category_num_posts = $categories[0]->category_count;
+
 ?>
 
 <aside class="read-next outer">
@@ -26,7 +37,7 @@ $related = new WP_Query(
                         <?php } ?>
                     ">
                         <small class="read-next-card-header-sitetitle">&mdash; <?php echo get_bloginfo( 'name' ); ?> &mdash;</small>
-                        <h3 class="read-next-card-header-title"><a href="<?php echo home_url(); ?>"><?php _e('Related Posts', 'geist'); ?></a></h3>
+                        <h3 class="read-next-card-header-title"><a href="<?php echo $category_url; ?>"><?php echo $category_name; ?></a></h3>
                     </header>
                     <div class="read-next-divider"><?php get_template_part('template-parts/icons/infinity'); ?></div>
                     <div class="read-next-card-content">
@@ -41,9 +52,13 @@ $related = new WP_Query(
                             ?>
                         </ul>
                     </div>
-                    <!-- <footer class="read-next-card-footer">
-                        <a href="<?php echo home_url(); ?>"><?php _e('See all posts', 'geist'); ?> &#8594;</a>
-                    </footer> -->
+                    <footer class="read-next-card-footer">
+                        <a href="<?php echo $category_url; ?>">
+                            <!-- <?php _e('See all posts', 'geist'); ?> &#8594; -->
+
+                            <?php printf( esc_html__( 'See all %d posts.', 'geist' ), $category_num_posts ); ?> &#8594;
+                        </a>
+                    </footer>
                 </article>
             <?php } ?>
 
