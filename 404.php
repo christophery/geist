@@ -46,6 +46,7 @@ $blog_name = get_bloginfo( 'name' );
                     $args = array(
                         'post_type' => 'post',
                         'posts_per_page' => 3,
+                        'ignore_sticky_posts' => true
                     );
 
                     $latest_posts = new WP_Query( $args );
@@ -58,11 +59,8 @@ $blog_name = get_bloginfo( 'name' );
     						$author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $args = array( 'class' => 'author-profile-image' ) );
 
                             ?>
-			        	<article class="post-card
-			        	    <?php if ( has_post_thumbnail() == false ) { ?>
-			        	        no-image
-			        	    <?php } ?>
-			        	">
+			        	<article <?php !has_post_thumbnail() ? post_class('post-card no-image') : post_class('post-card'); ?>>
+
 
 			        	    <?php if ( has_post_thumbnail() ) { ?>
 			        	    <a class="post-card-image-link" href="<?php the_permalink(); ?>">
