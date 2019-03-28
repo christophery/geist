@@ -23,7 +23,17 @@ $category_num_posts = $category[0]->category_count;
 	    <div class="inner">
 	        <?php get_template_part('template-parts/site-nav'); ?>
 	        <div class="site-header-content">
-	            <h1 class="site-title"><?php echo single_term_title(); ?></h1>
+	        	<h1 class="site-title">
+		        	<?php
+		        		if( is_category() ){
+		            		echo single_term_title();
+		        		}elseif( is_date() ){
+		        			echo get_the_date( _x( 'F Y', 'monthly archives date format' ) );
+		        		}else{
+		        			_e( 'Archive', 'geist' );
+		        		}
+		        	?>
+	        	</h1>
 	            <h2 class="site-description">
 	            	<?php
 	            		//check if category description is set
