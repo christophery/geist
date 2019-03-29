@@ -31,6 +31,11 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+## Editing Geist
+The recommended way to edit the Geist theme is to [create a child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/).
+
+This will ensure that none of your changes will be lost when you update Geist.
+
 ## Version History
 
 1.0.0
