@@ -4,6 +4,31 @@
 //   scrolling but continuous processing even when not scrolling
 jQuery(function($) {
 
+    /* search overlay */
+    $( ".search-button" ).on( "click", function() {
+        //toggle search overlay
+        $('.search-overlay').toggleClass('search-overlay-visible');
+
+        //on transitionend focus on search field
+        $('.search-overlay').one('transitionend', function() {
+            $( '.search-field' ).focus();
+        });
+    });
+
+    //close search overlay on esc key
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            //check if search overlay is open
+            if( $('.search-overlay').css('opacity') == 1 ){
+                //hide search overlay
+                $('.search-overlay').removeClass('search-overlay-visible');
+
+                //remove #search from URL
+                history.pushState("test", document.title, window.location.pathname + window.location.search);
+            }
+        }
+    });
+
     if($(".single-post").length){
         // Start fitVids
         var $postContent = $(".post-full-content");

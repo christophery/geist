@@ -2435,7 +2435,7 @@ Usage (In Ghost editor):
             backdrop-filter: blur(3px);
 }
 
-.search-overlay:target {
+.search-overlay-visible {
     opacity: 1;
     pointer-events: auto;
 }
