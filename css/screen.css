@@ -2548,6 +2548,61 @@ Usage (In Ghost editor):
     cursor: default;
 }
 
+/* 11. Search Results
+/* ---------------------------------------------------------- */
+
+.no-results{
+    width: 100%;
+    text-align: center;
+}
+
+.no-results .search-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.no-results .search-form label{
+    width: 100%;
+}
+
+.no-results .search-field{
+    display: block;
+    width: calc(100% - 40px);
+    padding: 14px 20px;
+    border: none;
+    color: #738a94;
+    font-size: 2rem;
+    line-height: 1em;
+    font-weight: 400;
+    letter-spacing: .5px;
+    user-select: text;
+    border-radius: 8px;
+    transition: border-color .15s linear;
+    -webkit-appearance: none;
+}
+
+.no-results .search-submit{
+    display: inline-block;
+    margin: 0 0 0 15px;
+    padding: 0 25px;
+    height: 52px;
+    outline: none;
+    color: #fff;
+    font-size: 1.7rem;
+    line-height: 37px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    background: -webkit-gradient(linear,left top,left bottom,from(#4fb7f0),color-stop(60%,#29a0e0),color-stop(90%,#29a0e0),to(#36a6e2));
+    background: linear-gradient(#4fb7f0,#29a0e0 60%,#29a0e0 90%,#36a6e2);
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 0 1px inset rgba(0,0,0,.14);
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.14);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
 
 /* 11. Site Footer
 /* ---------------------------------------------------------- */
