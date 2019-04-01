@@ -9,12 +9,12 @@
 
 get_header();
 
-$custom_logo_id = get_theme_mod( 'custom_logo' );
-$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+$geist_custom_logo_id = get_theme_mod( 'custom_logo' );
+$geist_image = wp_get_attachment_image_src( $geist_custom_logo_id , 'full' );
 
-$blog_name = get_bloginfo( 'name' );
+$geist_blog_name = get_bloginfo( 'name' );
 
-$author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) );
+$geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) );
 
 ?>
     <div class="site-wrapper">
@@ -22,10 +22,10 @@ $author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_
         <header class="site-header outer <?php if ( get_header_image() ){ ?>" style="background-image: url(<?php echo header_image(); ?>)<?php }else{ ?>no-image<?php } ?>">
             <div class="inner">
                 <nav class="site-nav-center">
-                    <?php if( $custom_logo_id ){ ?>
-                        <a class="site-nav-logo" href="<?php echo home_url(); ?>"><img src="<?php echo $image[0]; ?>" alt="<?php echo $blog_name; ?>" /></a>
+                    <?php if( $geist_custom_logo_id ){ ?>
+                        <a class="site-nav-logo" href="<?php echo home_url(); ?>"><img src="<?php echo $geist_image[0]; ?>" alt="<?php echo $geist_blog_name; ?>" /></a>
                     <?php }else{ ?>
-                        <a class="site-nav-logo" href="<?php echo home_url(); ?>"><?php echo $blog_name; ?></a>
+                        <a class="site-nav-logo" href="<?php echo home_url(); ?>"><?php echo $geist_blog_name; ?></a>
                     <?php } ?>
                 </nav>
             </div>
@@ -96,11 +96,11 @@ $author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_
 			        	                    </div>
 
 			        	                    <?php if( $author_avatar ){ ?>
-			        	                        <a href="<?php echo $author_url; ?>" class="static-avatar">
+			        	                        <a href="<?php echo $geist_author_url; ?>" class="static-avatar">
                                                     <?php echo $author_avatar; ?>
                                                 </a>
 			        	                    <?php }else{ ?>
-			        	                        <a href="<?php echo $author_url; ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
+			        	                        <a href="<?php echo $geist_author_url; ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
 			        	                    <?php } ?>
 			        	                </li>
 			        	            </ul>

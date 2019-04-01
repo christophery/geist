@@ -14,11 +14,11 @@
 
 get_header();
 
-$custom_logo_id = get_theme_mod( 'custom_logo' );
-$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+$geist_custom_logo_id = get_theme_mod( 'custom_logo' );
+$geist_image = wp_get_attachment_image_src( $geist_custom_logo_id , 'full' );
 
-$blog_name = get_bloginfo( 'name' );
-$blog_description = get_bloginfo( 'description' );
+$geist_blog_name = get_bloginfo( 'name' );
+$geist_blog_description = get_bloginfo( 'description' );
 
 ?>
 
@@ -26,13 +26,13 @@ $blog_description = get_bloginfo( 'description' );
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
-                <?php if( $custom_logo_id ){ ?>
-                    <img class="site-logo" src="<?php echo $image[0]; ?>" alt="<?php echo $blog_name; ?>" />
+                <?php if( $geist_custom_logo_id ){ ?>
+                    <img class="site-logo" src="<?php echo $geist_image[0]; ?>" alt="<?php echo $geist_blog_name; ?>" />
                 <?php }else{ ?>
-                    <?php echo $blog_name; ?>
+                    <?php echo $geist_blog_name; ?>
                 <?php } ?>
             </h1>
-            <h2 class="site-description"><?php echo $blog_description; ?></h2>
+            <h2 class="site-description"><?php echo $geist_blog_description; ?></h2>
         </div>
         <?php get_template_part('template-parts/site-nav'); ?>
     </div>

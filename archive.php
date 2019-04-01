@@ -10,10 +10,10 @@
 get_header();
 
 //get category
-$category = get_the_category();
+$geist_category = get_the_category();
 
 //get number of posts in category
-$category_num_posts = $category[0]->category_count;
+$geist_category_num_posts = $geist_category[0]->category_count;
 ?>
 
 <?php if ( have_posts() ) : ?>
@@ -42,10 +42,10 @@ $category_num_posts = $category[0]->category_count;
 	            			echo category_description();
 	            		}else{
 	            			//output number of posts in category
-	            			if( $category_num_posts > 1 ){
-	            				$category_text = printf( esc_html__( 'A collection of %d posts.', 'geist' ), $category_num_posts );
+	            			if( $geist_category_num_posts > 1 ){
+	            				$geist_category_text = printf( esc_html__( 'A collection of %d posts.', 'geist' ), $geist_category_num_posts );
 	            			}else{
-	            				$category_text = printf( esc_html__( 'A collection of %d post.', 'geist' ), $category_num_posts );
+	            				$geist_category_text = printf( esc_html__( 'A collection of %d post.', 'geist' ), $geist_category_num_posts );
 	            			}
 	            		}
 	            	?>
