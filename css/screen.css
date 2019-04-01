@@ -2811,6 +2811,7 @@ Usage (In Ghost editor):
     font-size: 1.8rem;
     border: 1px solid #edf4f8;
     background: #f4f8fb;
+    border-radius: 7px;
 }
 
 #reply-title,
@@ -2961,19 +2962,19 @@ Usage (In Ghost editor):
     text-decoration: none;
 }
 
-.comment-metadata a time{
+.comment-metadata a{
     font-size: 1.5rem;
+    line-height: 1.3em;
 }
 
 .comment-meta{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .comment-metadata{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: -5px;
 }
 
 .comment-reply-link,
@@ -2990,7 +2991,7 @@ Usage (In Ghost editor):
 }
 
 .edit-link{
-    margin-top: -35px;
+    margin-top: -25px;
 }
 
 .comment-reply-link:hover,
@@ -3002,4 +3003,18 @@ Usage (In Ghost editor):
 
 .says{
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .comment-metadata{
+        justify-content: flex-start;
+    }
+
+    .comment-metadata a{
+        width: 100%;
+    }
+
+    .edit-link{
+        margin-top: 10px;
+    }
 }
