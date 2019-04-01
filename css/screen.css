@@ -2939,7 +2939,16 @@ Usage (In Ghost editor):
     font-size: 2rem;
 }
 
+.comment-author,
+.comment-metadata{
+    position: relative;
+    margin-left: 75px;
+}
+
 .comment-author img{
+    position: absolute;
+    left: -75px;
+    top: -5px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -2964,6 +2973,7 @@ Usage (In Ghost editor):
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: -5px;
 }
 
 .comment-reply-link,
