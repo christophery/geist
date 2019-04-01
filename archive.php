@@ -30,7 +30,7 @@ $geist_category_num_posts = $geist_category[0]->category_count;
 		        		}elseif( is_date() ){
 		        			echo get_the_date( _x( 'F Y', 'monthly archives date format', 'geist' ) );
 		        		}else{
-		        			_e( 'Archive', 'geist' );
+		        			esc_html_e( 'Archive', 'geist' );
 		        		}
 		        	?>
 	        	</h1>
@@ -43,9 +43,11 @@ $geist_category_num_posts = $geist_category[0]->category_count;
 	            		}else{
 	            			//output number of posts in category
 	            			if( $geist_category_num_posts > 1 ){
-	            				$geist_category_text = printf( esc_html__( 'A collection of %d posts.', 'geist' ), $geist_category_num_posts );
+	            				/* translators: %d: number of posts, i.e. 5 posts  */
+	            				$geist_category_text = printf( esc_html__( 'A collection of %d posts.', 'geist' ), esc_html( $geist_category_num_posts ) );
 	            			}else{
-	            				$geist_category_text = printf( esc_html__( 'A collection of %d post.', 'geist' ), $geist_category_num_posts );
+	            				/* translators: %d: number of posts, i.e. 5 posts  */
+	            				$geist_category_text = printf( esc_html__( 'A collection of %d post.', 'geist' ), esc_html ( $geist_category_num_posts ) );
 	            			}
 	            		}
 	            	?>
