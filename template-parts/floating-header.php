@@ -7,7 +7,7 @@ $post_url = get_the_permalink();
 
 <div class="floating-header">
     <div class="floating-header-logo">
-        <a href="{{@site.url}}">
+        <a href="<?php echo home_url(); ?>">
             <?php if ( get_header_image() ){ ?>
                 <img src="<?php header_image(); ?>" alt="<?php echo get_bloginfo( 'name' ); ?> icon" />
             <?php } ?>

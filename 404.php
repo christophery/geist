@@ -13,6 +13,9 @@ $custom_logo_id = get_theme_mod( 'custom_logo' );
 $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 
 $blog_name = get_bloginfo( 'name' );
+
+$author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) );
+
 ?>
     <div class="site-wrapper">
 
@@ -93,9 +96,11 @@ $blog_name = get_bloginfo( 'name' );
 			        	                    </div>
 
 			        	                    <?php if( $author_avatar ){ ?>
-			        	                        <?php echo $author_avatar; ?>
+			        	                        <a href="<?php echo $author_url; ?>" class="static-avatar">
+                                                    <?php echo $author_avatar; ?>
+                                                </a>
 			        	                    <?php }else{ ?>
-			        	                        <a href="{{url}}" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
+			        	                        <a href="<?php echo $author_url; ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
 			        	                    <?php } ?>
 			        	                </li>
 			        	            </ul>

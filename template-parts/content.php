@@ -9,6 +9,8 @@
 
 $author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $args = array( 'class' => 'author-profile-image' ) );
 
+$author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) );
+
 //get categories
 $categories = get_the_category();
 
@@ -53,9 +55,11 @@ if( $categories ){
                     </div>
 
                     <?php if( $author_avatar ){ ?>
-                        <?php echo $author_avatar; ?>
+                        <a href="<?php echo $author_url; ?>" class="static-avatar">
+                            <?php echo $author_avatar; ?>
+                        </a>
                     <?php }else{ ?>
-                        <a href="{{url}}" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
+                        <a href="<?php echo $author_url; ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
                     <?php } ?>
                 </li>
             </ul>
