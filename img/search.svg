@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
-<circle fill="none" stroke="#738a94" stroke-width="6" stroke-miterlimit="10" cx="23.5" cy="23.5" r="18.5"/>
-<line fill="#738a94" stroke="#738a94" stroke-width="6" stroke-miterlimit="10" x1="35" y1="36" x2="56" y2="57"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>Search</title><path d="M508.875,493.792,353.089,338.005a201.615,201.615,0,0,0,52.245-135.339C405.333,90.917,314.417,0,202.667,0S0,90.917,0,202.667,90.917,405.334,202.667,405.334a201.617,201.617,0,0,0,135.339-52.245L493.792,508.875a10.665,10.665,0,1,0,15.083-15.083ZM202.667,384c-99.979,0-181.333-81.344-181.333-181.333S102.688,21.333,202.667,21.333,384,102.677,384,202.667,302.646,384,202.667,384Z" fill="#738a94"/></svg>

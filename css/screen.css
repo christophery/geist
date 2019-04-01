@@ -2496,8 +2496,8 @@ Usage (In Ghost editor):
 }
 
 .search-overlay input[type=submit] {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     text-indent: 100px;
     overflow: hidden;
     background: transparent url(../img/search.svg) no-repeat center center;
