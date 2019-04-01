@@ -17,7 +17,7 @@ $category_url = get_category_link( $categories[0]->term_id );
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="<?php echo get_the_date('F d, Y'); ?>"><?php echo get_the_date('F d, Y'); ?></time>
+                    <time class="post-full-meta-date" datetime="<?php echo get_the_date('F j, Y'); ?>"><?php echo get_the_date('F j, Y'); ?></time>
                     <span class='date-divider'>/</span>
                     <a href='<?php echo $category_url; ?>'><?php echo $category_name; ?></a>
                 </section>
