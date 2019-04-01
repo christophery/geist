@@ -15,6 +15,11 @@ jQuery(function($) {
         });
     });
 
+    $( ".search-overlay-close" ).on( "click", function() {
+        //toggle search overlay
+        $('.search-overlay').toggleClass('search-overlay-visible');
+    });
+
     //close search overlay on esc key
     $(document).keyup(function(e) {
         if (e.keyCode == 27) {

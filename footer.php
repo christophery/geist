@@ -35,7 +35,7 @@
     </div>
 
     <div id="search" class="search-overlay">
-        <a class="search-overlay-close" href="#"></a>
+        <button class="search-overlay-close"></button>
         <div class="search-overlay-content">
             <?php get_search_form(); ?>
         </div>
