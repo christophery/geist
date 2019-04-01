@@ -19,13 +19,13 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 ?>
     <div class="site-wrapper">
 
-        <header class="site-header outer <?php if ( get_header_image() ){ ?>" style="background-image: url(<?php echo header_image(); ?>)<?php }else{ ?>no-image<?php } ?>">
+        <header class="site-header outer <?php if ( get_header_image() ){ ?>" style="background-image: url(<?php echo esc_html( header_image() ); ?>)<?php }else{ ?>no-image<?php } ?>">
             <div class="inner">
                 <nav class="site-nav-center">
                     <?php if( $geist_custom_logo_id ){ ?>
-                        <a class="site-nav-logo" href="<?php echo home_url(); ?>"><img src="<?php echo $geist_image[0]; ?>" alt="<?php echo $geist_blog_name; ?>" /></a>
+                        <a class="site-nav-logo" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( $geist_image[0] ); ?>" alt="<?php echo esc_html( $geist_blog_name ); ?>" /></a>
                     <?php }else{ ?>
-                        <a class="site-nav-logo" href="<?php echo home_url(); ?>"><?php echo $geist_blog_name; ?></a>
+                        <a class="site-nav-logo" href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html( $geist_blog_name ); ?></a>
                     <?php } ?>
                 </nav>
             </div>
@@ -37,7 +37,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
                 <section class="error-message">
                     <h1 class="error-code"><?php esc_html_e( '404', 'geist' ); ?></h1>
                     <p class="error-description"><?php esc_html_e( 'Page not found', 'geist' ); ?></p>
-                    <a class="error-link" href="<?php echo home_url(); ?>">Go to the front page &#x2192;</a>
+                    <a class="error-link" href="<?php echo esc_url home_url() ); ?>">Go to the front page &#x2192;</a>
                 </section>
             </div>
         </main>
@@ -76,8 +76,8 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 			        	        <a class="post-card-content-link" href="<?php the_permalink(); ?>">
 
 			        	            <header class="post-card-header">
-			        	                <span class="post-card-tags"><?php echo $category_name; ?></span>
-			        	                <h2 class="post-card-title"><?php echo get_the_title(); ?></h2>
+			        	                <span class="post-card-tags"><?php echo esc_html( $category_name ); ?></span>
+			        	                <h2 class="post-card-title"><?php echo esc_html( get_the_title() ); ?></h2>
 			        	            </header>
 
 			        	            <section class="post-card-excerpt">
@@ -96,17 +96,17 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 			        	                    </div>
 
 			        	                    <?php if( $author_avatar ){ ?>
-			        	                        <a href="<?php echo $geist_author_url; ?>" class="static-avatar">
-                                                    <?php echo $author_avatar; ?>
+			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar">
+                                                    <?php echo esc_html( $author_avatar ); ?>
                                                 </a>
 			        	                    <?php }else{ ?>
-			        	                        <a href="<?php echo $geist_author_url; ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
+			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
 			        	                    <?php } ?>
 			        	                </li>
 			        	            </ul>
 
 			        	            <?php if( geist_estimated_reading_time() ){ ?>
-        	                            <span class="reading-time"><?php echo geist_estimated_reading_time(); ?></span>
+        	                            <span class="reading-time"><?php echo esc_html( geist_estimated_reading_time() ); ?></span>
         	                        <?php } ?>
 
 			        	        </footer>
