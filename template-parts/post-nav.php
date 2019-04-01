@@ -1,8 +1,5 @@
 <?php
 
-$prevPost = get_previous_post();
-$nextPost = get_next_post();
-
 //get releated posts based on post category
 $related = new WP_Query(
     array(
