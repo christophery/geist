@@ -34,24 +34,25 @@ $geist_author_post_count = count_user_posts( $geist_author_id );
             <?php } ?>
             <h1 class="site-title"><?php the_author(); ?></h1>
             <?php if( $geist_author_bio ){ ?>
-                <h2 class="author-bio"><?php echo $geist_author_bio; ?></h2>
+                <h2 class="author-bio"><?php echo esc_html( $geist_author_bio ); ?></h2>
             <?php } ?>
             <div class="author-meta">
                 <div class="author-stats">
                     <?php
                     if( $geist_author_post_count > 1 ){
-                        printf( esc_html__( '%d posts', 'geist' ), $geist_author_post_count );
+                        /* translators: %d: number of posts, i.e. 5 posts  */
+                        printf( esc_html__( '%d posts', 'geist' ), esc_html( $geist_author_post_count ) );
                     }else if( $geist_author_post_count == 1 ){
-                        printf( esc_html__( '%d post', 'geist' ), $geist_author_post_count );
+                        /* translators: %d: number of posts, i.e. 5 posts  */
+                        printf( esc_html__( '%d post', 'geist' ), esc_html ( $geist_author_post_count ) );
                     }else{
-                        echo __( 'No posts', 'geist' );
-                        printf( __( 'No posts', 'geist' ) );
+                        esc_html_e( 'No posts', 'geist' );
                     }
                     ?>
                     <span class="bull">&bull;</span>
                 </div>
                 <?php if( $geist_author_website ){ ?>
-                    <a class="social-link social-link-wb" href="<?php echo $geist_author_website; ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/website'); ?></a>
+                    <a class="social-link social-link-wb" href="<?php echo esc_url( $geist_author_website ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/website'); ?></a>
                 <?php } ?>
                 <a class="social-link social-link-rss" href="<?php bloginfo('rss_url'); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/rss'); ?></a>
             </div>

@@ -23,9 +23,9 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
             <div class="inner">
                 <nav class="site-nav-center">
                     <?php if( $geist_custom_logo_id ){ ?>
-                        <a class="site-nav-logo" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( $geist_image[0] ); ?>" alt="<?php echo esc_html( $geist_blog_name ); ?>" /></a>
+                        <a class="site-nav-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $geist_image[0] ); ?>" alt="<?php echo esc_html( $geist_blog_name ); ?>" /></a>
                     <?php }else{ ?>
-                        <a class="site-nav-logo" href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html( $geist_blog_name ); ?></a>
+                        <a class="site-nav-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( $geist_blog_name ); ?></a>
                     <?php } ?>
                 </nav>
             </div>
@@ -37,7 +37,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
                 <section class="error-message">
                     <h1 class="error-code"><?php esc_html_e( '404', 'geist' ); ?></h1>
                     <p class="error-description"><?php esc_html_e( 'Page not found', 'geist' ); ?></p>
-                    <a class="error-link" href="<?php echo esc_url home_url() ); ?>">Go to the front page &#x2192;</a>
+                    <a class="error-link" href="<?php echo esc_url( home_url() ); ?>">Go to the front page &#x2192;</a>
                 </section>
             </div>
         </main>
@@ -59,7 +59,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
                             $latest_posts->the_post();
 
     						//get author avatar
-    						$author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $args = array( 'class' => 'author-profile-image' ) );
+    						$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $args = array( 'class' => 'author-profile-image' ) );
 
                             ?>
 			        	<article <?php !has_post_thumbnail() ? post_class('post-card no-image') : post_class('post-card'); ?>>
@@ -95,9 +95,9 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 			        	                    	<?php the_author(); ?>
 			        	                    </div>
 
-			        	                    <?php if( $author_avatar ){ ?>
+			        	                    <?php if( $geist_author_avatar ){ ?>
 			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar">
-                                                    <?php echo esc_html( $author_avatar ); ?>
+                                                    <?php echo $geist_author_avatar; ?>
                                                 </a>
 			        	                    <?php }else{ ?>
 			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
