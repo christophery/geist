@@ -166,10 +166,11 @@ function geist_estimated_reading_time() {
  * Change [...] to ... in excerpt
  */
 
-function new_excerpt_more( $more ) {
+function geist_new_excerpt_more( $more ) {
     return '...';
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+
+add_filter('excerpt_more', 'geist_new_excerpt_more');
 
 /**
  * Custom excerpt limit
