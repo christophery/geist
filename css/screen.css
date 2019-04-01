@@ -2803,14 +2803,18 @@ Usage (In Ghost editor):
 # Comments
 --------------------------------------------------------------*/
 
-#comments{
+.comment-respond{
     padding: 70px 15vw 50px;
+}
+
+#comments{
     font-size: 1.8rem;
     border: 1px solid #edf4f8;
     background: #f4f8fb;
 }
 
-#reply-title{
+#reply-title,
+.comments-title{
     color: #15171a;
     font-size: 3.5rem;
     line-height: 1;
@@ -2893,4 +2897,99 @@ Usage (In Ghost editor):
             box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
 
     -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Comments List */
+
+.comments-area{
+    padding: 70px 4vw 50px;
+}
+
+.comment-list,
+.children{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.comment-list{
+    margin-top: 40px;
+}
+
+.comment{
+    margin: 30px 0;
+}
+
+.comment pre{
+    overflow: auto;
+}
+
+.comment-list > li.comment li.comment {
+    margin-left: 8rem;
+}
+
+.comment .comment-body{
+    background: #FFF;
+    padding: 3rem;
+    box-shadow: 0 0 1px rgba(0,0,0,.06), 0 2px 6px rgba(0,0,0,.03);
+    border-radius: 8px;
+}
+
+.comment-author{
+    font-size: 2rem;
+}
+
+.comment-author img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-author a{
+    color: #15171a;
+}
+
+.comment-author a:hover{
+    text-decoration: none;
+}
+
+.comment-metadata a time{
+    font-size: 1.5rem;
+}
+
+.comment-meta{
+    margin-bottom: 20px;
+}
+
+.comment-metadata{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment-reply-link,
+.comment-edit-link{
+    padding: 5px 16px;
+    border: 1px solid #aebbc1;
+    color: #738a94;
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 20px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.edit-link{
+    margin-top: -35px;
+}
+
+.comment-reply-link:hover,
+.comment-edit-link:hover{
+    border-color: #3eb0ef;
+    color: #3eb0ef;
+    text-decoration: none;
+}
+
+.says{
+    display: none;
 }
