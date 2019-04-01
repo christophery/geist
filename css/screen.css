@@ -2804,7 +2804,7 @@ Usage (In Ghost editor):
 --------------------------------------------------------------*/
 
 .comment-respond{
-    padding: 70px 15vw 50px;
+    padding: 0 12vw 0;
 }
 
 #comments{
@@ -2914,7 +2914,7 @@ Usage (In Ghost editor):
 }
 
 .comment-list{
-    margin-top: 40px;
+    margin: 40px 0 60px;
 }
 
 .comment{
@@ -2992,6 +2992,10 @@ Usage (In Ghost editor):
 
 .edit-link{
     margin-top: -25px;
+}
+
+.comment-metadata a.comment-edit-link{
+    font-size: 1.3rem;
 }
 
 .comment-reply-link:hover,
