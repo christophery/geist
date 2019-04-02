@@ -2,18 +2,18 @@
 
 <style type="text/css">
 .responsive-header-img {
-    background-image: url(<?php header_image(); ?>);
+    background-image: url(<?php esc_url( header_image() ); ?>);
 }
 @media(max-width: 1000px) {
     .responsive-header-img {
         background-image: url(<?php header_image(); ?>);
         background-image: -webkit-image-set(
-                url(<?php header_image(); ?>) 1x,
-                url(<?php header_image(); ?>) 2x
+                url(<?php esc_url( header_image() ); ?>) 1x,
+                url(<?php esc_url( header_image() ); ?>) 2x
         );
         background-image: image-set(
-                url(<?php header_image(); ?>) 1x,
-                url(<?php header_image(); ?>) 2x
+                url(<?php esc_url( header_image() ); ?>) 1x,
+                url(<?php esc_url( header_image() ); ?>) 2x
         );
     }
 }
@@ -21,12 +21,12 @@
     .responsive-header-img {
         background-image: url(<?php header_image(); ?>);
         background-image: -webkit-image-set(
-                url(<?php header_image(); ?>) 1x,
-                url(<?php header_image(); ?>) 2x
+                url(<?php esc_url( header_image() ); ?>) 1x,
+                url(<?php esc_url( header_image() ); ?>) 2x
         );
         background-image: image-set(
-                url(<?php header_image(); ?>) 1x,
-                url(<?php header_image(); ?>) 2x
+                url(<?php esc_url( header_image() ); ?>) 1x,
+                url(<?php esc_url( header_image() ); ?>) 2x
         );
     }
 }

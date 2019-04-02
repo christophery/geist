@@ -1,12 +1,12 @@
 <?php
 
-$categories = get_the_category();
+$geist_categories = get_the_category();
 
 //get name of first category
-$category_name = $categories[0]->name;
+$geist_category_name = $geist_categories[0]->name;
 
 //get category url
-$category_url = get_category_link( $categories[0]->term_id );
+$geist_category_url = get_category_link( $geist_categories[0]->term_id );
 
 ?>
 
@@ -19,9 +19,9 @@ $category_url = get_category_link( $categories[0]->term_id );
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="<?php echo get_the_date('F j, Y'); ?>"><?php echo get_the_date('F j, Y'); ?></time>
                     <span class='date-divider'>/</span>
-                    <a href='<?php echo $category_url; ?>'><?php echo $category_name; ?></a>
+                    <a href='<?php echo esc_url( $geist_category_url ); ?>'><?php echo esc_html( $geist_category_name ); ?></a>
                 </section>
-                <h1 class="post-full-title"><?php echo get_the_title();?></h1>
+                <h1 class="post-full-title"><?php echo esc_html( get_the_title() );?></h1>
             </header>
 
             <?php if ( has_post_thumbnail() ) { ?>

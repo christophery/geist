@@ -22,7 +22,7 @@
         <article <?php !has_post_thumbnail() ? post_class('post-full no-image') : post_class('post-full'); ?>>
 
             <header class="post-full-header">
-                <h1 class="post-full-title"><?php echo get_the_title();?></h1>
+                <h1 class="post-full-title"><?php echo esc_html( get_the_title() );?></h1>
             </header>
 
             <?php if ( has_post_thumbnail() ) { ?>

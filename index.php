@@ -27,12 +27,12 @@ $geist_blog_description = get_bloginfo( 'description' );
         <div class="site-header-content">
             <h1 class="site-title">
                 <?php if( $geist_custom_logo_id ){ ?>
-                    <img class="site-logo" src="<?php echo $geist_image[0]; ?>" alt="<?php echo $geist_blog_name; ?>" />
+                    <img class="site-logo" src="<?php echo esc_url( $geist_image[0] ); ?>" alt="<?php echo esc_html( $geist_blog_name ); ?>" />
                 <?php }else{ ?>
-                    <?php echo $geist_blog_name; ?>
+                    <?php echo esc_html( $geist_blog_name ); ?>
                 <?php } ?>
             </h1>
-            <h2 class="site-description"><?php echo $geist_blog_description; ?></h2>
+            <h2 class="site-description"><?php echo esc_html( $geist_blog_description ); ?></h2>
         </div>
         <?php get_template_part('template-parts/site-nav'); ?>
     </div>

@@ -27,7 +27,7 @@ if ( post_password_required() ) {
 	if ( have_comments() ) :
 		?>
 		<h2 class="comments-title">
-			<?php printf( __( 'Comments', 'geist' ) ); ?>
+			<?php printf( esc_html__( 'Comments', 'geist' ) ); ?>
 		</h2><!-- .comments-title -->
 
 		<?php the_comments_navigation(); ?>

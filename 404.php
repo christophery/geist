@@ -23,9 +23,9 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
             <div class="inner">
                 <nav class="site-nav-center">
                     <?php if( $geist_custom_logo_id ){ ?>
-                        <a class="site-nav-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $geist_image[0] ); ?>" alt="<?php echo esc_html( $geist_blog_name ); ?>" /></a>
+                        <a class="site-nav-logo" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( $geist_image[0] ); ?>" alt="<?php echo esc_html( $geist_blog_name ); ?>" /></a>
                     <?php }else{ ?>
-                        <a class="site-nav-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( $geist_blog_name ); ?></a>
+                        <a class="site-nav-logo" href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html( $geist_blog_name ); ?></a>
                     <?php } ?>
                 </nav>
             </div>
