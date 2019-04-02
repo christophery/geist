@@ -1,33 +1,12 @@
-/* Table of Contents
 /* ------------------------------------------------------------
 
 This is a development CSS file which is built to a minified
 production stylesheet in assets/built/screen.css
 
-1.  Global Styles
-2.  Layout
-3.  Special Templates
-4.  Site Header
-5.  Site Navigation
-6.  Post Feed
-7.  Single Post
-  7.1. Subscribe Form
-  7.2. Post Footer
-     7.2.1 Single Author Byline
-     7.2.2 Multiple Author Byline
-  7.3. Comments
-  7.4. Related Posts
-  7.5. Floating Header
-  7.6. Koenig Styles
-8.  Author Template
-9.  Error Template
-10. Subscribe Overlay
-11. Site Footer
-
 */
 
 
-/* 1. Global - Set up the things
+/* Global - Set up the things
 /* ---------------------------------------------------------- */
 @import "global.css";
 
@@ -51,7 +30,7 @@ body {
 }
 
 
-/* 2. Layout - Page building blocks
+/* Layout - Page building blocks
 /* ---------------------------------------------------------- */
 
 .site-wrapper {
@@ -95,7 +74,7 @@ body {
 
 */
 
-/* 3. Special Template Styles
+/* Special Template Styles
 /* ---------------------------------------------------------- */
 
 @media (min-width: 900px) {
@@ -112,7 +91,7 @@ body {
 }
 
 
-/* 4. Site Header
+/* Site Header
 /* ---------------------------------------------------------- */
 
 .site-header {
@@ -207,7 +186,7 @@ body {
 }
 
 
-/* 5. Site Navigation
+/* Site Navigation
 /* ---------------------------------------------------------- */
 
 .site-nav {
@@ -431,7 +410,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 
-/* 6. Post Feed
+/* Post Feed
 /* ---------------------------------------------------------- */
 
 .post-feed {
@@ -792,7 +771,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 
 
-/* 7. Single Post
+/* Single Post
 /* ---------------------------------------------------------- */
 
 .single-post .site-main,
@@ -1314,7 +1293,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 7.1. Subscribe Form
+/* Subscribe Form
 /* ---------------------------------------------------------- */
 
 .subscribe-form {
@@ -1452,7 +1431,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 7.2. Post Footer
+/* Post Footer
 /* ---------------------------------------------------------- */
 
 .post-full-footer {
@@ -1470,7 +1449,7 @@ Usage (In Ghost editor):
     max-width: 840px;
 }
 
-/* 7.2.1 Single Author Byline
+/* Single Author Byline
 /* ---------------------------------------------------------- */
 
 .author-card {
@@ -1532,7 +1511,7 @@ Usage (In Ghost editor):
     text-decoration: none;
 }
 
-/* 7.2.2 Multiple Author Byline
+/* Multiple Author Byline
 /* ---------------------------------------------------------- */
 
 .post-full-authors {
@@ -1688,7 +1667,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 7.3. Comments
+/* Comments
 /* ---------------------------------------------------------- */
 
 .post-full-comments {
@@ -1697,7 +1676,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 7.4. Related posts
+/* Related posts
 /* ---------------------------------------------------------- */
 
 .read-next-feed {
@@ -1867,7 +1846,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 7.5. Floating Header
+/* Floating Header
 /* ---------------------------------------------------------- */
 
 .floating-header {
@@ -2113,7 +2092,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 7.6. Koenig Styles
+/* Editor Styles
 /* ---------------------------------------------------------- */
 
 .post-content {
@@ -2271,7 +2250,7 @@ Usage (In Ghost editor):
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* 8. Author Template
+/* Author Template
 /* ---------------------------------------------------------- */
 
 .site-header-content .author-profile-image {
@@ -2344,7 +2323,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 9. Error Template
+/* Error Template
 /* ---------------------------------------------------------- */
 
 .error404 .site-main {
@@ -2405,7 +2384,7 @@ Usage (In Ghost editor):
 }
 
 
-/* 10. Search Overlay
+/* Search Overlay
 /* ---------------------------------------------------------- */
 
 .search-overlay {
@@ -2551,7 +2530,7 @@ Usage (In Ghost editor):
     cursor: default;
 }
 
-/* 11. Search Results
+/* Search Results
 /* ---------------------------------------------------------- */
 
 .no-results{
@@ -2607,7 +2586,7 @@ Usage (In Ghost editor):
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* 11. Site Footer
+/* Site Footer
 /* ---------------------------------------------------------- */
 
 .site-footer {
