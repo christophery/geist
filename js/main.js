@@ -27,9 +27,6 @@ jQuery(function($) {
             if( $('.search-overlay').css('opacity') == 1 ){
                 //hide search overlay
                 $('.search-overlay').removeClass('search-overlay-visible');
-
-                //remove #search from URL
-                history.pushState("test", document.title, window.location.pathname + window.location.search);
             }
         }
     });

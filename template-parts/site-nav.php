@@ -44,6 +44,6 @@ $geist_blog_name = get_bloginfo( 'name' );
             <?php } ?>
         </div>
         <a class="rss-button" href="<?php esc_url( bloginfo('rss_url') ); ?>" title="RSS" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/rss'); ?></a>
-        <a class="search-button" href="#search"><?php esc_html_e( 'Search', 'geist' ); ?></a>
+        <button class="search-button"><?php esc_html_e( 'Search', 'geist' ); ?></button>
     </div>
 </nav>

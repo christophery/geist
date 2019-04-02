@@ -368,6 +368,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     padding: 4px 10px;
     border: #fff 1px solid;
+    background: transparent;
     color: #fff;
     font-size: 1.2rem;
     line-height: 1em;
