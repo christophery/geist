@@ -2990,9 +2990,15 @@ Usage (In Ghost editor):
     display: none;
 }
 
+.comment-content{
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
 @media only screen and (max-width: 750px) {
     .comment-list>li.comment li.comment{
         margin-left: 0;
+        padding-left: 0;
     }
 }
 
