@@ -1,6 +1,6 @@
 <?php
 
-//get releated posts based on post category
+//get related posts based on post category
 $geist_related = new WP_Query(
     array(
         'category__in'   => wp_get_post_categories( $post->ID ),
