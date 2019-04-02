@@ -49,7 +49,8 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
                     $args = array(
                         'post_type' => 'post',
                         'posts_per_page' => 3,
-                        'ignore_sticky_posts' => true
+                        'ignore_sticky_posts' => true,
+                        'has_password'   => false //exclude password protected posts
                     );
 
                     $latest_posts = new WP_Query( $args );
