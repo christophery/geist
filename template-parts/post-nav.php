@@ -78,8 +78,6 @@ $geist_category_num_posts = $geist_categories[0]->category_count;
                     </div>
                     <footer class="read-next-card-footer">
                         <a href="<?php echo esc_url( $geist_category_url ); ?>">
-                            <!-- <?php esc_html_e('See all posts', 'geist'); ?> &#8594; -->
-
                             <?php
                                 printf(
                                     /* translators: %d: number of posts, i.e. 5 posts  */
