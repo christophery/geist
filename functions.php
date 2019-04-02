@@ -184,3 +184,55 @@ function geist_custom_excerpt_length( $length ) {
 }
 
 add_filter( 'excerpt_length', 'geist_custom_excerpt_length', 999 );
+
+/**
+ * Get next post
+ */
+
+function geist_next_post(){
+	$geist_get_next_post = get_next_post();
+
+	$geist_next_post = new WP_Query(
+	    array(
+	        'posts_per_page' => 1,
+	        'post__in' => array( $geist_get_next_post->ID ),
+	        'ignore_sticky_posts' => true
+	    )
+	);
+
+	if( $geist_next_post->have_posts() ) {
+	    //output related posts
+	    while( $geist_next_post->have_posts() ) {
+	        $geist_next_post->the_post();
+
+	        get_template_part('template-parts/content');
+	    }
+	    wp_reset_postdata();
+	}
+}
+
+/**
+ * Get previous post
+ */
+
+function geist_prev_post(){
+	$geist_get_prev_post = get_previous_post();
+
+	$geist_prev_post = new WP_Query(
+	    array(
+	        'posts_per_page' => 1,
+	        'post__in' => array( $geist_get_prev_post->ID ),
+	        'ignore_sticky_posts' => true
+	    )
+	);
+
+	if( $geist_prev_post->have_posts() ) {
+	    //output related posts
+	    while( $geist_prev_post->have_posts() ) {
+	        $geist_prev_post->the_post();
+
+	        get_template_part('template-parts/content');
+	    }
+	    wp_reset_postdata();
+	}
+}

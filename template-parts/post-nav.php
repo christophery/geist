@@ -10,28 +10,6 @@ $geist_related = new WP_Query(
     )
 );
 
-//get next post
-$geist_get_next_post = get_next_post();
-
-$geist_next_post = new WP_Query(
-    array(
-        'posts_per_page' => 1,
-        'post__in' => array( $geist_get_next_post->ID ),
-        'ignore_sticky_posts' => true
-    )
-);
-
-//get previous post
-$geist_get_prev_post = get_previous_post();
-
-$geist_prev_post = new WP_Query(
-    array(
-        'posts_per_page' => 1,
-        'post__in' => array( $geist_get_prev_post->ID ),
-        'ignore_sticky_posts' => true
-    )
-);
-
 //get categories
 $geist_categories = get_the_category();
 
@@ -88,30 +66,17 @@ $geist_category_num_posts = $geist_categories[0]->category_count;
 
             <!-- Display next post -->
             <?php
-            if( $geist_next_post->have_posts() ) {
-                //output related posts
-                while( $geist_next_post->have_posts() ) {
-                    $geist_next_post->the_post();
-
-                    get_template_part('template-parts/content');
+                if( geist_next_post() ){
+                    geist_next_post();
                 }
-                wp_reset_postdata();
-            }
             ?>
 
             <!-- Display previous post -->
             <?php
-            if( $geist_prev_post->have_posts() ) {
-                //output related posts
-                while( $geist_prev_post->have_posts() ) {
-                    $geist_prev_post->the_post();
-
-                    get_template_part('template-parts/content');
+                if( geist_prev_post() ){
+                    geist_prev_post();
                 }
-                wp_reset_postdata();
-            }
             ?>
-
         </div>
     </div>
 </aside>
