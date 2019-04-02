@@ -24,10 +24,6 @@ $geist_next_post = new WP_Query(
 //get previous post
 $geist_get_prev_post = get_previous_post();
 
-// echo '<pre>';
-// print_r($geist_get_prev_post);
-// echo '</pre>';
-
 $geist_prev_post = new WP_Query(
     array(
         'posts_per_page' => 1,
