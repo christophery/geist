@@ -90,8 +90,7 @@ $geist_category_num_posts = $geist_categories[0]->category_count;
                 </article>
             <?php } ?>
 
-            <!-- {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs --}} -->
-
+            <!-- Display next post -->
             <?php
             if( $geist_next_post->have_posts() ) {
                 //output related posts
@@ -104,7 +103,7 @@ $geist_category_num_posts = $geist_categories[0]->category_count;
             }
             ?>
 
-            <!-- {{!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs --}} -->
+            <!-- Display previous post -->
             <?php
             if( $geist_prev_post->have_posts() ) {
                 //output related posts
