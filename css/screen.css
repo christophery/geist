@@ -2873,6 +2873,7 @@ Usage (In Ghost editor):
     color(var(--blue) lightness(-4%) saturation(-10%))
     );
     border-radius: 5px;
+    border: 0;
     -webkit-box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
             box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
 
@@ -2917,6 +2918,7 @@ Usage (In Ghost editor):
 
 .comment-author{
     font-size: 2rem;
+    line-height: 2.3rem;
 }
 
 .comment-author,
@@ -2986,6 +2988,12 @@ Usage (In Ghost editor):
 
 .says{
     display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    .comment-list>li.comment li.comment{
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
