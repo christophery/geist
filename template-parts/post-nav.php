@@ -10,6 +10,33 @@ $geist_related = new WP_Query(
     )
 );
 
+//get next post
+$geist_get_next_post = get_next_post();
+
+$geist_next_post = new WP_Query(
+    array(
+        'posts_per_page' => 1,
+        'post__in' => array( $geist_get_next_post->ID ),
+        'ignore_sticky_posts' => true
+    )
+);
+
+//get previous post
+$geist_get_prev_post = get_previous_post();
+
+// echo '<pre>';
+// print_r($geist_get_prev_post);
+// echo '</pre>';
+
+$geist_prev_post = new WP_Query(
+    array(
+        'posts_per_page' => 1,
+        'post__in' => array( $geist_get_prev_post->ID ),
+        'ignore_sticky_posts' => true
+    )
+);
+
+//get categories
 $geist_categories = get_the_category();
 
 //get name of first category
@@ -66,47 +93,30 @@ $geist_category_num_posts = $geist_categories[0]->category_count;
             <?php } ?>
 
             <!-- {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs --}} -->
-            <?php
-                //TODO: THIS NEEDS TO BE REFACTORED
-                $nextPost = get_next_post();
 
-                if($nextPost) {
-                    $args = array(
-                        'posts_per_page' => 1,
-                        'include' => $nextPost->ID
-                    );
-                    $nextPost = get_posts($args);
-                    foreach ($nextPost as $post) {
-                        setup_postdata($post);
-
-            ?>
-                <?php get_template_part('template-parts/content'); ?>
             <?php
-                        wp_reset_postdata();
-                    } //end foreach
-                } // end if
+            if( $geist_next_post->have_posts() ) {
+                //output related posts
+                while( $geist_next_post->have_posts() ) {
+                    $geist_next_post->the_post();
+
+                    get_template_part('template-parts/content');
+                }
+                wp_reset_postdata();
+            }
             ?>
 
             <!-- {{!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs --}} -->
             <?php
-                //TODO: THIS NEEDS TO BE REFACTORED
-                $prevPost = get_previous_post();
+            if( $geist_prev_post->have_posts() ) {
+                //output related posts
+                while( $geist_prev_post->have_posts() ) {
+                    $geist_prev_post->the_post();
 
-                if (!empty( $prevPost )) {
-                    $args = array(
-                        'posts_per_page' => 1,
-                        'include' => $prevPost->ID
-                    );
-                    $prevPost = get_posts($args);
-                    foreach ($prevPost as $post) {
-                        setup_postdata($post);
-
-            ?>
-                <?php get_template_part('template-parts/content'); ?>
-            <?php
-                        wp_reset_postdata();
-                    } //end foreach
-                } // end if
+                    get_template_part('template-parts/content');
+                }
+                wp_reset_postdata();
+            }
             ?>
 
         </div>
