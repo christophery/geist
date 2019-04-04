@@ -19,7 +19,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 ?>
     <div class="site-wrapper">
 
-        <header class="site-header outer <?php if ( get_header_image() ){ ?>" style="background-image: url(<?php echo esc_html( header_image() ); ?>)<?php }else{ ?>no-image<?php } ?>">
+        <header class="site-header outer <?php if ( get_header_image() ){ ?>" style="background-image: url(<?php echo esc_url( header_image() ); ?>)<?php }else{ ?>no-image<?php } ?>">
             <div class="inner">
                 <nav class="site-nav-center">
                     <?php if( $geist_custom_logo_id ){ ?>
@@ -98,7 +98,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 
 			        	                    <?php if( $geist_author_avatar ){ ?>
 			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar">
-                                                    <?php echo $geist_author_avatar; ?>
+                                                    <?php echo $geist_author_avatar; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
                                                 </a>
 			        	                    <?php }else{ ?>
 			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>

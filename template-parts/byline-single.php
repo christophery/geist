@@ -12,7 +12,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 
 <section class="author-card">
     <?php if( $geist_author_avatar ){ ?>
-        <?php echo $geist_author_avatar; ?>
+        <?php echo $geist_author_avatar; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
     <?php }else{ ?>
         <span class="avatar-wrapper"><?php get_template_part('template-parts/avatar'); ?></span>
     <?php } ?>

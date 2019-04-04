@@ -30,7 +30,7 @@ $geist_author_post_count = count_user_posts( $geist_author_id );
         <?php get_template_part('template-parts/site-nav'); ?>
         <div class="site-header-content">
             <?php if( $geist_author_avatar ){ ?>
-                <?php echo $geist_author_avatar; ?>
+                <?php echo $geist_author_avatar; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
             <?php } ?>
             <h1 class="site-title"><?php the_author(); ?></h1>
             <?php if( $geist_author_bio ){ ?>
