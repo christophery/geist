@@ -13,7 +13,7 @@ get_header();
 $geist_author_id = get_the_author_meta( 'ID' );
 
 //get avatar
-$geist_author_avatar = get_avatar( $geist_author_id, 100, '', '', $args = array( 'class' => 'author-profile-image' ) );
+$geist_author_avatar = get_avatar( $geist_author_id, 100, '', '', $geist_author_avatar_args = array( 'class' => 'author-profile-image' ) );
 
 //get author bio
 $geist_author_bio = get_the_author_meta( 'description' );

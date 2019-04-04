@@ -46,21 +46,21 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
             <div class="inner">
                 <div class="post-feed">
                     <?php
-                    $args = array(
+                    $geist_latest_posts_args = array(
                         'post_type' => 'post',
                         'posts_per_page' => 3,
                         'ignore_sticky_posts' => true,
                         'has_password'   => false //exclude password protected posts
                     );
 
-                    $latest_posts = new WP_Query( $args );
+                    $geist_latest_posts = new WP_Query( $geist_latest_posts_args );
 
-                    if( $latest_posts->have_posts() ) {
-                        while( $latest_posts->have_posts() ) {
-                            $latest_posts->the_post();
+                    if( $geist_latest_posts->have_posts() ) {
+                        while( $geist_latest_posts->have_posts() ) {
+                            $geist_latest_posts->the_post();
 
     						//get author avatar
-    						$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $args = array( 'class' => 'author-profile-image' ) );
+    						$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $geist_author_avatar_args = array( 'class' => 'author-profile-image' ) );
 
                             ?>
 			        	<article <?php !has_post_thumbnail() ? post_class('post-card no-image') : post_class('post-card'); ?>>
