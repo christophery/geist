@@ -73,6 +73,9 @@ if ( ! function_exists( 'geist_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		// Add support for full width images
+		add_theme_support( 'align-wide' );
 	}
 endif;
 add_action( 'after_setup_theme', 'geist_setup' );

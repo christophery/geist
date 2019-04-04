@@ -2132,9 +2132,9 @@ Usage (In Ghost editor):
     max-width: 100vw;
 }
 
-.post-full-content figure {
+/*.post-full-content figure {
     margin: 1.5em 0 3em;
-}
+}*/
 
 .post-full-content figure img {
     margin: 0;
@@ -2777,6 +2777,22 @@ Usage (In Ghost editor):
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.alignwide {
+    margin-left: -10vw;
+    margin-right: -10vw;
+    max-width: 100vw;
+}
+
+.alignfull {
+    margin-left: calc(-100vw / 2 + 100% / 2);
+    margin-right: calc(-100vw / 2 + 100% / 2);
+    max-width: 100vw;
+}
+
+.alignfull img {
+    width: 100vw;
 }
 
 /*--------------------------------------------------------------
