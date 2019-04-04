@@ -16,7 +16,7 @@ $geist_blog_name = get_bloginfo( 'name' );
         <?php } ?>
         <?php
         wp_nav_menu( array(
-            'theme_location' => 'menu-1',
+            'theme_location' => 'header-nav',
             'menu_class'     => 'nav',
             'depth'          => 1
         ) );
