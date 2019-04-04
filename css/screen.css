@@ -307,9 +307,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
             align-items: center;
 }
 
-.social-links a:last-of-type {
+/*.social-links a:last-of-type {
     padding-right: 20px;
-}
+}*/
 
 .social-link {
     display: -webkit-box;
@@ -374,7 +374,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     line-height: 1em;
     border-radius: 10px;
     opacity: 0.8;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .search-button:hover {
@@ -383,6 +383,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .rss-button {
+    padding: 10px;
     opacity: 0.8;
 }
 
