@@ -36,7 +36,7 @@ if( $geist_categories ){
                 <?php if( $geist_categories ){ ?>
                     <span class="post-card-tags"><?php echo esc_html( $geist_category_name ); ?></span>
                 <?php } ?>
-                <h2 class="post-card-title"><?php echo esc_html( get_the_title() ); ?></h2>
+                <?php the_title( '<h2 class="post-card-title">', '</h2>' ); ?>
             </header>
 
             <section class="post-card-excerpt">

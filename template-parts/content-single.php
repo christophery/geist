@@ -21,7 +21,7 @@ $geist_category_url = get_category_link( $geist_categories[0]->term_id );
                     <span class='date-divider'>/</span>
                     <a href='<?php echo esc_url( $geist_category_url ); ?>'><?php echo esc_html( $geist_category_name ); ?></a>
                 </section>
-                <h1 class="post-full-title"><?php echo esc_html( get_the_title() );?></h1>
+                <?php the_title( '<h1 class="post-full-title">', '</h1>' ); ?>
             </header>
 
             <?php if ( has_post_thumbnail() ) { ?>

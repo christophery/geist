@@ -78,7 +78,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 
 			        	            <header class="post-card-header">
 			        	                <span class="post-card-tags"><?php echo esc_html( $category_name ); ?></span>
-			        	                <h2 class="post-card-title"><?php echo esc_html( get_the_title() ); ?></h2>
+                                        <?php the_title( '<h2 class="post-card-title">', '</h2>' ); ?>
 			        	            </header>
 
 			        	            <section class="post-card-excerpt">
