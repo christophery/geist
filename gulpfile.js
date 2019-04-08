@@ -1,3 +1,4 @@
+var gulp = require('gulp');
 const {series, watch, src, dest} = require('gulp');
 const pump = require('pump');
 
@@ -17,6 +18,7 @@ const easyimport = require('postcss-easy-import');
 
 function serve(done) {
     livereload.listen();
+    gulp.watch('js/*.js', js);
     done();
 }
 
