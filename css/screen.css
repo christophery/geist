@@ -2098,7 +2098,7 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 
 .post-content {
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
@@ -2107,8 +2107,19 @@ Usage (In Ghost editor):
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center;*/
     max-width: 920px;
+}
+
+
+/* https://github.com/WordPress/gutenberg/issues/8289 */
+.post-content > *:not(.alignfull) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.editor-content > [class^="wp-block-"]:not(.alignfull).alignwide {
+  max-width: 1400px;
 }
 
 .single-post .post-content > p:first-child {
@@ -2764,7 +2775,7 @@ Usage (In Ghost editor):
 .alignleft {
     display: inline;
     float: left;
-    margin-right: 1.5em;
+    margin-right: 1.5em !important;
 }
 
 .alignright {
