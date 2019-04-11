@@ -31,12 +31,11 @@ jQuery(function($) {
         }
     });
 
-    if($(".single-post").length){
-        // Start fitVids
-        var $postContent = $(".post-full-content");
-        $postContent.fitVids();
-        // End fitVids
+    //fitvids
+    //https://github.com/davatron5000/FitVids.js
+    $(".post-full-content").fitVids();
 
+    if($(".single-post").length){
         var progressBar = document.querySelector('#reading-progress');
         var header = document.querySelector('.floating-header');
         var title = document.querySelector('.post-full-title');
