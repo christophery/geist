@@ -1449,6 +1449,7 @@ Usage (In Ghost editor):
     margin: 0 auto;
     padding: 3vw 0 6vw 0;
     max-width: 840px;
+    width: 100%;
 }
 
 /* Single Author Byline
@@ -2111,6 +2112,11 @@ Usage (In Ghost editor):
     max-width: 920px;
 }
 
+.post-content .wp-block-columns.alignfull,
+.post-content .wp-block-columns.alignfull .wp-block-column{
+    padding-left: calc(2 * 1rem);
+    padding-right: calc(2 * 1rem);
+}
 
 /* https://github.com/WordPress/gutenberg/issues/8289 */
 .post-content > *:not(.alignfull) {
