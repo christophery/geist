@@ -3052,3 +3052,53 @@ Usage (In Ghost editor):
         margin-top: 10px;
     }
 }
+
+/*--------------------------------------------------------------
+# Post Password Form
+--------------------------------------------------------------*/
+
+.post-password-form input[type='password']{
+    margin: 8px 0 15px;
+    padding: 10px;
+    border: 1px solid #dae2e7;
+    color: #738a94;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -webkit-transition: border-color .15s linear;
+    transition: border-color .15s linear;
+}
+
+.post-password-form input[type='submit']{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+    display: inline-block;
+    padding: 0 20px;
+    height: 41px;
+    outline: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 37px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+    background: -webkit-gradient(
+    linear,
+    left top, left bottom,
+    from(color(var(--blue) whiteness(+7%))),
+    color-stop(60%, color(var(--blue) lightness(-7%) saturation(-10%))),
+    color-stop(90%, color(var(--blue) lightness(-7%) saturation(-10%))),
+    to(color(var(--blue) lightness(-4%) saturation(-10%)))
+    );
+    background: linear-gradient(
+    color(var(--blue) whiteness(+7%)),
+    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+    color(var(--blue) lightness(-4%) saturation(-10%))
+    );
+    border-radius: 5px;
+    border: 0;
+    -webkit-box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
+            box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
+
+    -webkit-font-smoothing: subpixel-antialiased;
+}
