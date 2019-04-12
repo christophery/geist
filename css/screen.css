@@ -2180,6 +2180,10 @@ Usage (In Ghost editor):
 /* Galleries
 /* ---------------------------------------------------------- */
 
+.wp-block-gallery li{
+    padding-left: 0;
+}
+
 .gallery {
     display: flex;
     flex-flow: row wrap;
