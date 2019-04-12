@@ -81,10 +81,14 @@ jQuery(function($) {
             ticking = false;
         }
 
-        window.addEventListener('scroll', onScroll, {passive: true});
-        window.addEventListener('resize', onResize, false);
+        //check if post title exists
+        if( title ){
+            window.addEventListener('scroll', onScroll, {passive: true});
+            window.addEventListener('resize', onResize, false);
 
-        update();
+            update();
+        }
+
     }
 
 });
