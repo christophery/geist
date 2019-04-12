@@ -44,7 +44,7 @@ if ( ! function_exists( 'geist_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'header-nav' => esc_html__( 'Header Navigation', 'geist' ),
+			'primary' => esc_html__( 'Primary Menu', 'geist' ),
 		) );
 
 		/*
