@@ -1792,6 +1792,8 @@ Usage (In Ghost editor):
     display: -ms-flexbox;
     display: flex;
     font-size: 1.7rem;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .read-next-card-content ul {
