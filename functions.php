@@ -149,9 +149,10 @@ function geist_estimated_reading_time() {
     $seconds = floor( $words % 120 / ( 120 / 60 ) );
 
     if ( 1 <= $minutes ) {
-        $estimated_time = $minutes . ' min read';
+        /* translators: %d: number of minutes a post will take to read, i.e. 10 min read  */
+        $estimated_time = sprintf( esc_html__( '%d min read', 'geist' ), esc_html( $minutes ) );
     } else {
-        $estimated_time = '1 min read';
+        $estimated_time = sprintf( esc_html__( '1 min read', 'geist' ) );
     }
 
     return $estimated_time;
