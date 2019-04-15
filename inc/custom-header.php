@@ -20,8 +20,7 @@ function geist_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'geist_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'FFF',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'flex-width'             => true,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'geist_header_style',
 	) ) );
