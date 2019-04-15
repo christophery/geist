@@ -43,12 +43,12 @@ function geist_customize_register( $wp_customize ) {
 		array(
 			'title' => 'Facebook',
 			'id' => 'facebook',
-			'placeholder' => 'https://facebook.com/WordPress'
+			'placeholder' => 'https://facebook.com/username'
 		),
 		array(
 			'title' => 'Twitter',
 			'id' => 'twitter',
-			'placeholder' => 'https://twitter.com/cmyee'
+			'placeholder' => 'https://twitter.com/username'
 		),
 		array(
 			'title' => 'Instagram',
@@ -63,12 +63,12 @@ function geist_customize_register( $wp_customize ) {
 		array(
 			'title' => 'GitHub',
 			'id' => 'github',
-			'placeholder' => 'https://github.com/christophery'
+			'placeholder' => 'https://github.com/username'
 		),
 		array(
 			'title' => 'LinkedIn',
 			'id' => 'linkedin',
-			'placeholder' => 'https://ca.linkedin.com/in/christophery'
+			'placeholder' => 'https://linkedin.com/in/username'
 		)
 	);
 
