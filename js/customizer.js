@@ -11,7 +11,7 @@
 	// Site title and description.
 	wp.customize( 'blogname', function( value ) {
 		value.bind( function( to ) {
-			$( '.site-title a' ).text( to );
+			$( '.site-title' ).text( to );
 		} );
 	} );
 	wp.customize( 'blogdescription', function( value ) {
@@ -33,7 +33,7 @@
 					'clip': 'auto',
 					'position': 'relative'
 				} );
-				$( '.site-title a, .site-description' ).css( {
+				$( '.site-title, .site-description' ).css( {
 					'color': to
 				} );
 			}
