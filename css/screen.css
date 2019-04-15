@@ -307,10 +307,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
             align-items: center;
 }
 
-/*.social-links a:last-of-type {
-    padding-right: 20px;
-}*/
-
 .social-link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1081,29 +1077,8 @@ Usage (In Ghost editor):
     color: inherit;
 }
 
-/*.post-full-content .fluid-width-video-wrapper {
-    margin: 1.5em 0 3em;
-}*/
-
 .post-full-content hr {
     margin: 4vw 0;
-}
-
-.post-full-content hr:after {
-    content: "";
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    display: block;
-    margin-left: -10px;
-    width: 1px;
-    height: 30px;
-    background: color(var(--lightgrey) l(+10%));
-    -webkit-box-shadow: #fff 0 0 0 5px;
-            box-shadow: #fff 0 0 0 5px;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
 }
 
 .post-full-content h1,
@@ -1291,145 +1266,6 @@ Usage (In Ghost editor):
     padding: 6px 12px;
     border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid;
 }
-
-
-/* Subscribe Form
-/* ---------------------------------------------------------- */
-
-.subscribe-form {
-    margin: 1.5em 0;
-    padding: 6.5vw 7vw 7vw;
-    border: color(var(--whitegrey) l(+2%)) 1px solid;
-    text-align: center;
-    background: color(var(--whitegrey) l(+4%));
-    border-radius: 7px;
-}
-
-.subscribe-form-title {
-    margin: 0 0 3px 0;
-    padding: 0;
-    color: var(--darkgrey);
-    font-size: 3.5rem;
-    line-height: 1;
-    font-weight: 700;
-}
-
-.subscribe-form p {
-    margin-bottom: 1em;
-    color: var(--midgrey);
-    font-size: 2.2rem;
-    line-height: 1.55em;
-    letter-spacing: 0.2px;
-}
-
-.subscribe-form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
-    max-width: 420px;
-}
-
-.subscribe-form .form-group {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-}
-
-.subscribe-email {
-    display: block;
-    padding: 10px;
-    width: 100%;
-    border: color(var(--lightgrey) l(+7%)) 1px solid;
-    color: var(--midgrey);
-    font-size: 1.8rem;
-    line-height: 1em;
-    font-weight: normal;
-    -webkit-user-select: text;
-       -moz-user-select: text;
-        -ms-user-select: text;
-            user-select: text;
-    border-radius: 5px;
-    -webkit-transition: border-color 0.15s linear;
-    transition: border-color 0.15s linear;
-
-    -webkit-appearance: none;
-}
-
-.subscribe-email:focus {
-    outline: 0;
-    border-color: color(var(--lightgrey) l(-2%));
-}
-
-.subscribe-form button {
-    display: inline-block;
-    margin: 0 0 0 10px;
-    padding: 0 20px;
-    height: 41px;
-    outline: none;
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 37px;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
-    background: -webkit-gradient(
-    linear,
-    left top, left bottom,
-    from(color(var(--blue) whiteness(+7%))),
-    color-stop(60%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    color-stop(90%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    to(color(var(--blue) lightness(-4%) saturation(-10%)))
-    );
-    background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
-    );
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
-            box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
-
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-
-.subscribe-form button:active,
-.subscribe-form button:focus {
-    background: color(var(--blue) lightness(-9%) saturation(-10%));
-}
-
-@media (max-width: 650px) {
-    .subscribe-form-title {
-        font-size: 2.4rem;
-    }
-    .subscribe-form p {
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .subscribe-form form {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .subscribe-form .form-group {
-        width: 100%;
-    }
-    .subscribe-form button {
-        margin: 10px 0 0 0;
-        width: 100%;
-    }
-}
-
 
 /* Post Footer
 /* ---------------------------------------------------------- */
@@ -2123,23 +1959,6 @@ Usage (In Ghost editor):
     line-height: 1.5em;
 }
 
-.post-full-content .kg-image {
-    max-width: 100%;
-}
-
-/* Preventing full-width image overlap with post image.  */
-.post-full-image + .post-full-content .kg-content *:first-child .kg-image {
-    width: 100%;
-}
-
-.post-full-content .kg-width-wide .kg-image {
-    max-width: 1040px;
-}
-
-.post-full-content .kg-width-full .kg-image {
-    max-width: 100vw;
-}
-
 .post-full-content figure img {
     margin: 0;
 }
@@ -2155,10 +1974,9 @@ Usage (In Ghost editor):
     max-width: 100%;
 }
 
-/*.wp-block-embed-youtube{
-    width: 100%;
+.wp-block-embed-youtube{
     margin: 1.5em 0 3em !important;
-}*/
+}
 
 embed, iframe, object {
     max-width: 100%;
@@ -2723,9 +2541,9 @@ embed, iframe, object {
     }
 }
 
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
+/* Accessibility
+/* ---------------------------------------------------------- */
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
     border: 0;
@@ -2767,9 +2585,8 @@ embed, iframe, object {
     outline: 0;
 }
 
-/*--------------------------------------------------------------
-# Pagination
---------------------------------------------------------------*/
+/* Pagination
+/* ---------------------------------------------------------- */
 
 .posts-navigation{
     width: 100%;
@@ -2809,9 +2626,9 @@ embed, iframe, object {
     order: 2;
 }
 
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
+/* Alignments
+/* ---------------------------------------------------------- */
+
 .alignleft {
     display: inline;
     float: left;
@@ -2849,9 +2666,8 @@ embed, iframe, object {
     width: 100vw;
 }
 
-/*--------------------------------------------------------------
-# Comments
---------------------------------------------------------------*/
+/* Comments
+/* ---------------------------------------------------------- */
 
 .comment-respond{
     padding: 0 6vw 0;
