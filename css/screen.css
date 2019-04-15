@@ -1029,7 +1029,7 @@ Usage (In Ghost editor):
 .post-full-content blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    border-left: --blue 3px solid;
 }
 
 .post-full-content blockquote p {
@@ -2507,24 +2507,24 @@ embed, iframe, object {
     width: 100%;
     background: transparent;
     border: 0;
-    color: #738a94;
+    color: var(--midgrey);
     -webkit-appearance: none;
 }
 
 .search-overlay input[type=search]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #738a94;
+  color: var(--midgrey);
 }
 
 .search-overlay input[type=search]::-moz-placeholder { /* Firefox 19+ */
-  color: #738a94;
+  color: var(--midgrey);
 }
 
 .search-overlay input[type=search]:-ms-input-placeholder { /* IE 10+ */
-  color: #738a94;
+  color: var(--midgrey);
 }
 
 .search-overlay input[type=search]:-moz-placeholder { /* Firefox 18- */
-  color: #738a94;
+  color: var(--midgrey);
 }
 
 .search-overlay input[type=submit] {
@@ -2557,7 +2557,7 @@ embed, iframe, object {
     display: block;
     width: 30px;
     height: 2px;
-    background: #738a94;
+    background: var(--midgrey);
     opacity: 0.8;
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -2572,7 +2572,7 @@ embed, iframe, object {
     display: block;
     width: 30px;
     height: 2px;
-    background: #738a94;
+    background: var(--midgrey);
     opacity: 0.8;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
@@ -2608,7 +2608,7 @@ embed, iframe, object {
     width: calc(100% - 40px);
     padding: 14px 20px;
     border: none;
-    color: #738a94;
+    color: var(--midgrey);
     font-size: 2rem;
     line-height: 1em;
     font-weight: 400;
@@ -2788,14 +2788,14 @@ embed, iframe, object {
     padding: 9px 16px;
     border: 1px solid #aebbc1;
     border-radius: 20px;
-    color: #738a94;
+    color: var(--midgrey);
     transition: all .2s ease;
 }
 
 .nav-previous a:hover,
 .nav-next a:hover{
-    border-color: #3eb0ef;
-    color: #3eb0ef;
+    border-color: var(--blue);
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -2866,7 +2866,7 @@ embed, iframe, object {
 
 #reply-title,
 .comments-title{
-    color: #15171a;
+    color: var(--darkgrey);
     font-size: 3.5rem;
     line-height: 1;
     font-weight: 700;
@@ -2877,7 +2877,7 @@ embed, iframe, object {
 .comment-notes,
 .logged-in-as{
     margin-bottom: 1em;
-    color: #738a94;
+    color: var(--midgrey);
     font-size: 1.8rem;
     line-height: 1.53em;
     letter-spacing: .2px;
@@ -2897,7 +2897,7 @@ embed, iframe, object {
     margin-top: 8px;
     padding: 10px;
     border: 1px solid #dae2e7;
-    color: #738a94;
+    color: var(--midgrey);
     font-size: 1.8rem;
     border-radius: 5px;
     -webkit-appearance: none;
@@ -2909,7 +2909,7 @@ embed, iframe, object {
 #comments input[type='email']:focus,
 #comments input[type='url']:focus{
     outline: 0;
-    border-color: #3eb0ef;
+    border-color: var(--blue);
 }
 
 .form-submit{
@@ -3033,7 +3033,7 @@ embed, iframe, object {
 .comment-edit-link{
     padding: 5px 16px;
     border: 1px solid #aebbc1;
-    color: #738a94;
+    color: var(--midgrey);
     font-size: 1.2rem;
     line-height: 1;
     font-weight: 500;
@@ -3052,8 +3052,8 @@ embed, iframe, object {
 
 .comment-reply-link:hover,
 .comment-edit-link:hover{
-    border-color: #3eb0ef;
-    color: #3eb0ef;
+    border-color: var(--blue);
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -3095,7 +3095,7 @@ embed, iframe, object {
     margin: 8px 0 15px;
     padding: 10px;
     border: 1px solid #dae2e7;
-    color: #738a94;
+    color: var(--midgrey);
     font-size: 1.8rem;
     border-radius: 5px;
     -webkit-appearance: none;
