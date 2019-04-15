@@ -2187,6 +2187,26 @@ embed, iframe, object {
     width: 100vw;
 }
 
+.wp-block-media-text{
+    margin: 0 0 3em;
+}
+
+.wp-block-media-text{
+    padding-top: 1.5em;
+}
+
+.post-content .wp-block-separator,
+.post-content hr{
+    max-width: 2.25em;
+}
+
+.post-content .wp-block-separator.is-style-wide,
+.post-content hr.is-style-wide,
+.post-content .wp-block-separator.is-style-dots,
+.post-content hr.is-style-dots{
+    max-width: 100%;
+}
+
 /* Galleries
 /* ---------------------------------------------------------- */
 
