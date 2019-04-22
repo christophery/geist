@@ -1959,6 +1959,11 @@ Usage (In Ghost editor):
     line-height: 1.5em;
 }
 
+.post-full-content figure {
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+}
+
 .post-full-content figure img {
     margin: 0;
 }
