@@ -78,7 +78,7 @@ function geist_customize_register( $wp_customize ) {
 	  		'geist_social_' . $social_profile['id'],
 	  		array(
 	  			'transport' => 'refresh',
-	  			'sanitize_callback' => 'geist_sanitize_uri'
+	  			'sanitize_callback' => 'esc_url_raw'
 	  		)
 	  	);
 
@@ -95,6 +95,28 @@ function geist_customize_register( $wp_customize ) {
 	  	);
 
 	}
+
+	/**
+	 * Header Menu Color
+	 */
+
+	$wp_customize->add_setting( 'geist_header_menu_color' , array(
+	    'default'     => '#FFF',
+	    'transport'   => 'refresh',
+	    'sanitize_callback' => 'sanitize_hex_color'
+	) );
+
+	$wp_customize->add_control(
+	    new WP_Customize_Color_Control(
+	        $wp_customize,
+	        'geist_header_menu_color',
+	        array(
+	            'label'      => __( 'Header Menu Color', 'geist' ),
+	            'section'    => 'colors',
+	            'settings'   => 'geist_header_menu_color'
+	        )
+	    )
+	);
 
 }
 add_action( 'customize_register', 'geist_customize_register' );
@@ -124,15 +146,3 @@ function geist_customize_preview_js() {
 	wp_enqueue_script( 'geist-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'geist_customize_preview_js' );
-
-
-/**
- * Sanitize URIs
- */
-
-function geist_sanitize_uri($uri){
-	if('' === $uri){
-		return '';
-	}
-	return esc_url_raw($uri);
-}

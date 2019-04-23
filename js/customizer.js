@@ -39,4 +39,11 @@
 			}
 		} );
 	} );
+
+	// Header menu color
+    wp.customize( 'geist_header_menu_color', function( value ) {
+        value.bind( function( to ) {
+            $( '.nav li a' ).css( 'color', to );
+        } );
+    });
 } )( jQuery );

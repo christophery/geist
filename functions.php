@@ -237,3 +237,28 @@ function geist_prev_post(){
 		}
 	}
 }
+
+/**
+ * Customizer Styles
+ */
+
+function geist_customizer_styles() {
+
+	$geist_header_menu_color = get_theme_mod( 'geist_header_menu_color' );
+
+	echo '<style type="text/css">';
+		if( $geist_header_menu_color ){
+			echo '.nav li a {';
+				echo 'color:' . $geist_header_menu_color . ';';
+			echo '}';
+			echo '.search-button {';
+				echo 'color:' . $geist_header_menu_color . ';';
+				echo 'border-color:' . $geist_header_menu_color . ';';
+			echo '}';
+			echo '.social-link svg, .rss-button svg {';
+				echo 'fill:' . $geist_header_menu_color . ';';
+			echo '}';
+		}
+	echo '</style>';
+}
+add_action( 'wp_head', 'geist_customizer_styles' );
