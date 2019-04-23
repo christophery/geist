@@ -34,7 +34,7 @@ function geist_customize_register( $wp_customize ) {
 	    'geist_social',
 	    array(
 	        'title'     => 'Social Profiles',
-	        'description' => 'Enter the URL to your account or profile for each service for the icon to appear in the header.',
+	        'description' => __( 'Enter the URL to your account or profile for each service for the icon to appear in the header.', 'geist' ),
 	        'priority'  => 200
 	    )
 	);
