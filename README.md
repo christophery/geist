@@ -47,19 +47,19 @@ The **zip** Gulp task packages the theme files into `dist/geist.zip`, which you 
 $ yarn zip
 ```
 
-##Third-party resources:
+## Third-party resources:
 
 Casper, Copyright (c) 2013-2019 [Ghost Foundation](https://ghost.org/)
 License: [MIT license](https://github.com/TryGhost/Casper/blob/master/LICENSE).
 Source: [https://github.com/TryGhost/Casper](https://github.com/TryGhost/Casper)
 
-_s, Copyright 2015-2018 [Automattic, Inc.](https://automattic.com/) 
-License: [GPLv2 or later]((https://www.gnu.org/licenses/gpl-2.0.html)
+_s, Copyright 2015-2018 [Automattic, Inc.](https://automattic.com/)
+License: [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 Source: [https://github.com/Automattic/_s/](https://github.com/Automattic/_s/)
 
 FitVids, Copyright 2013 [Chris Coyier](https://chriscoyier.net/) and [Dave Rupert](https://daverupert.com/) 
 License: [WTFPL](http://www.wtfpl.net/) 
 Source: [https://github.com/davatron5000/FitVids.js](https://github.com/davatron5000/FitVids.js)
 
-##License
+## License
 Geist, Copyright (c) 2019 [Chris Yee](https://chrisyee.ca/) - Released under the [GPL v2.0 license](https://www.gnu.org/licenses/gpl-2.0.html).
