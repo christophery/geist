@@ -1,7 +1,10 @@
-// NOTE: Scroll performance is poor in Safari
-// - this appears to be due to the events firing much more slowly in Safari.
-//   Dropping the scroll event and using only a raf loop results in smoother
-//   scrolling but continuous processing even when not scrolling
+/* ------------------------------------------------------------
+
+This is a development JS file which is built to a minified
+production file in built/main.js
+
+*/
+
 jQuery(function($) {
 
     /* search overlay */

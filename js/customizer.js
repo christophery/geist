@@ -1,3 +1,10 @@
+/* ------------------------------------------------------------
+
+This is a development JS file which is built to a minified
+production file in built/customizer.js
+
+*/
+
 /**
  * File customizer.js.
  *
