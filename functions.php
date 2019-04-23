@@ -245,6 +245,7 @@ function geist_prev_post(){
 function geist_customizer_styles() {
 
 	$geist_header_menu_color = get_theme_mod( 'geist_header_menu_color' );
+	$geist_header_image_overlay = get_theme_mod( 'geist_header_image_overlay' );
 
 	echo '<style type="text/css">';
 		if( $geist_header_menu_color ){
@@ -257,6 +258,12 @@ function geist_customizer_styles() {
 			echo '}';
 			echo '.social-link svg, .rss-button svg {';
 				echo 'fill:' . $geist_header_menu_color . ';';
+			echo '}';
+		}
+
+		if( $geist_header_image_overlay ){
+			echo '.site-header:before {';
+				echo 'background:' . 'rgba(0,0,0,' . $geist_header_image_overlay . ')' . ';';
 			echo '}';
 		}
 	echo '</style>';

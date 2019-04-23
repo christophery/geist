@@ -118,6 +118,37 @@ function geist_customize_register( $wp_customize ) {
 	    )
 	);
 
+	/**
+	 * Header Image Overlay
+	 */
+
+	$wp_customize->add_setting( 'geist_header_image_overlay' , array(
+	    'default'     => '0.18',
+	    'transport'   => 'refresh',
+	    'sanitize_callback' => 'geist_sanitize_header_image_overlay'
+	) );
+
+	$wp_customize->add_control(
+	    new WP_Customize_Control(
+	        $wp_customize,
+	        'geist_header_image_overlay',
+	        array(
+	        	'type'       => 'number',
+	            'label'      => __( 'Image overlay', 'geist' ),
+	            'description' => __( 'Adjust the opacity of the header image overlay. (ie: 0.18 is equal to 18%)', 'geist' ),
+	            'section'    => 'header_image',
+	            'settings'   => 'geist_header_image_overlay',
+	            'priority'   => 1,
+	            'input_attrs' => array(
+	                    'min'   => 0,
+	                    'max'   => 1,
+	                    'step'  => 0.01,
+	                    'placeholder' => '0.18'
+	            ),
+	        )
+	    )
+	);
+
 }
 add_action( 'customize_register', 'geist_customize_register' );
 
@@ -146,3 +177,14 @@ function geist_customize_preview_js() {
 	wp_enqueue_script( 'geist-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
 add_action( 'customize_preview_init', 'geist_customize_preview_js' );
+
+/**
+ * Sanitize header image overlay value
+ */
+function geist_sanitize_header_image_overlay( $input ) {
+	if( $input > 1 ){
+		$input == 1;
+	}else{
+		return filter_var( $input, FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_FRACTION );
+	}
+}

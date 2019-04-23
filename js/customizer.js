@@ -46,4 +46,11 @@
             $( '.nav li a' ).css( 'color', to );
         } );
     });
+
+    // Header Image Overlay
+    wp.customize( 'geist_header_image_overlay', function( value ) {
+        value.bind( function( to ) {
+            $( '.site-header:before' ).css( 'background', 'rgba(0,0,0,' + to + ')' );
+        } );
+    });
 } )( jQuery );
