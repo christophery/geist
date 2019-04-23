@@ -47,6 +47,15 @@ The **zip** Gulp task packages the theme files into `dist/geist.zip`, which you 
 $ yarn zip
 ```
 
+## SVG Icons
+Geist uses inline SVG icons, included. You can find all icons inside `/template-parts/icons`. 
+
+To use an icon just use the [get_template_part()](https://developer.wordpress.org/reference/functions/get_template_part/) function:
+
+```
+<?php get_template_part('template-parts/icons/website'); ?>
+```
+
 ## Third-party resources:
 
 Casper, Copyright (c) 2013-2019 [Ghost Foundation](https://ghost.org/)  
