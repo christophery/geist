@@ -29,6 +29,24 @@ The recommended way to edit the Geist theme is to [create a child theme](https:/
 
 This will ensure that none of your changes will be lost when you update Geist.
 
+## Development
+Geist CSS and JS are compiled and minified using Gulp. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com/) installed globally.
+
+**From the theme's root directory run:**
+
+```
+$ yarn install
+$ yarn dev
+```
+
+Now you can edit files in `/css/` and `/js/`, which will be compiled to `/built/` automatically.
+
+The **zip** Gulp task packages the theme files into `dist/geist.zip`, which you can then upload to your WordPress site.
+
+```
+$ yarn zip
+```
+
 ##Third-party resources:
 
 Casper, Copyright (c) 2013-2019 [Ghost Foundation](https://ghost.org/)
