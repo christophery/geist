@@ -5,7 +5,7 @@ Author: Chris Yee
 Author URI: https://chrisyee.ca
 Description: Geist is a personal blogging theme for WordPress. This theme is a port of Casper the default theme for the Ghost blogging platform.
 Version: 1.0.0
-License: MIT
+License: GNU General Public License v2.0
 License URI: LICENSE
 Text Domain: geist
 Tags: blog, grid-layout, custom-header, custom-logo, custom-menu, featured-images, flexible-header, threaded-comments, wide-blocks, translation-ready
@@ -15,7 +15,4 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 Geist is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */

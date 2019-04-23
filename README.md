@@ -1,6 +1,6 @@
 # Geist
 
-Geist is a personal blogging theme for WordPress. This theme is a port of [Casper](https://github.com/TryGhost/Casper) the default theme for the Ghost blogging platform.
+Geist is a personal blogging theme for WordPress. This theme is a port of [Casper](https://github.com/TryGhost/Casper) the default theme for the [Ghost](https://ghost.org/) blogging platform.
 
 Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one of your websites.
 
@@ -11,17 +11,8 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 - Search
 - Comments
 - Customizer
-	- Site Title
-	- Tagline
-	- Header Image
-	- Logo
 - Social profiles
-	- Facebook
-	- Twitter
-	- Instagram
-	- YouTube
-	- GitHub
-	- LinkedIn
+- Responsive design
 
 ## Requirements
 
@@ -38,14 +29,19 @@ The recommended way to edit the Geist theme is to [create a child theme](https:/
 
 This will ensure that none of your changes will be lost when you update Geist.
 
-## Version History
+##Third-party resources:
 
-1.0.0
+Casper, Copyright (c) 2013-2019 [Ghost Foundation](https://ghost.org/)
+License: [MIT license](https://github.com/TryGhost/Casper/blob/master/LICENSE).
+Source: [https://github.com/TryGhost/Casper](https://github.com/TryGhost/Casper)
 
-- Initial release
+_s, Copyright 2015-2018 [Automattic, Inc.](https://automattic.com/) 
+License: [GPLv2 or later]((https://www.gnu.org/licenses/gpl-2.0.html)
+Source: [https://github.com/Automattic/_s/](https://github.com/Automattic/_s/)
 
-## Thanks to
+FitVids, Copyright 2013 [Chris Coyier](https://chriscoyier.net/) and [Dave Rupert](https://daverupert.com/) 
+License: [WTFPL](http://www.wtfpl.net/) 
+Source: [https://github.com/davatron5000/FitVids.js](https://github.com/davatron5000/FitVids.js)
 
-- [Ghost](https://ghost.org/)
-- [Underscores](https://underscores.me/)
-- [FitVids.js](http://fitvidsjs.com/)
+##License
+Geist, Copyright (c) 2019 [Chris Yee](https://chrisyee.ca/) - Released under the [GPL v2.0 license](https://www.gnu.org/licenses/gpl-2.0.html).
