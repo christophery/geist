@@ -2355,7 +2355,7 @@ embed, iframe, object {
     text-indent: 100px;
     overflow: hidden;
     background: transparent url(../img/search.svg) no-repeat center center;
-    background-size: 100%;
+    background-size: 70px;
     border: none;
 }
 
