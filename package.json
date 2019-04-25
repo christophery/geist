@@ -3,7 +3,7 @@
     "description": "Geist is a personal blogging theme for WordPress. This theme is a port of Casper the default theme for the Ghost blogging platform.",
     "demo": "https://chrisyee.ca",
     "version": "1.0.0",
-    "license": "MIT",
+    "license": "GPL",
     "scripts": {
         "dev": "gulp",
         "zip": "gulp zip"
@@ -11,6 +11,13 @@
     "author": {
         "name": "Chris Yee",
         "url": "https://chrisyee.ca"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/christophery/geist"
+    },
+    "bugs": {
+        "url": "https://github.com/christophery/geist/issues"
     },
     "devDependencies": {
         "autoprefixer": "9.5.0",
