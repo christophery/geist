@@ -4,6 +4,8 @@ Geist is a personal blogging theme for WordPress. This theme is a port of [Caspe
 
 Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one of your websites.
 
+[View Demo](https://chrisyee.ca/) | [Download Theme](https://github.com/christophery/geist/releases)
+
 ![Geist Screenshot](screenshot.png?raw=true)
 
 ## Features
