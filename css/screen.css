@@ -767,7 +767,47 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
+/* Sticky Posts */
 
+.sticky{
+    position: relative;
+}
+
+.sticky.has-post-thumbnail .post-card-content{
+    position: absolute;
+    height: 100%;
+}
+
+.sticky.has-post-thumbnail .post-card-image-link{
+    opacity: 0.3;
+}
+
+.sticky.has-post-thumbnail .post-card-tags,
+.sticky.has-post-thumbnail .reading-time,
+.sticky.has-post-thumbnail .post-card-content-link{
+    color: #FFF;
+}
+
+.sticky.has-post-thumbnail:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+@media (max-width: 795px) {
+    .sticky.has-post-thumbnail .post-card-content{
+        position: relative;
+        height: auto;
+    }
+
+    .sticky.has-post-thumbnail .post-card-image-link{
+        opacity: 1;
+    }
+}
 
 /* Single Post
 /* ---------------------------------------------------------- */
@@ -2125,6 +2165,11 @@ embed, iframe, object {
     padding-right: 0;
 }
 
+.gallery-caption,
+.wp-caption-text{
+    font-size: 70% !important;
+}
+
 /* Author Template
 /* ---------------------------------------------------------- */
 
@@ -2884,6 +2929,25 @@ embed, iframe, object {
 .comment-content{
     -ms-word-wrap: break-word;
     word-wrap: break-word;
+}
+
+.bypostauthor{
+    position: relative;
+}
+
+.bypostauthor .comment-body{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.bypostauthor:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0.3em;
+    width: calc(100% - 0.3em);
+    height: 3px;
+    background: var(--blue);
 }
 
 @media only screen and (max-width: 750px) {
