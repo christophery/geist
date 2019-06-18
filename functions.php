@@ -135,6 +135,13 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Load Jetpack compatibility file.
+ */
+if ( defined( 'JETPACK__VERSION' ) ) {
+	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
  * Estimate time required to read the article
  * https://www.binarymoon.co.uk/2013/10/wordpress-estimated-reading-time/
  *

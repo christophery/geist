@@ -58,7 +58,7 @@ $geist_category_num_posts = $geist_category[0]->category_count;
 
 	<main id="site-main" class="site-main outer">
 	    <div class="inner">
-	        <div class="post-feed">
+	        <div id="content" class="post-feed">
 				<?php
 				/* Start the Loop */
 				while ( have_posts() ) :

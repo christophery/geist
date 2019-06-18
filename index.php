@@ -42,7 +42,7 @@ $geist_blog_description = get_bloginfo( 'description' );
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
-        <div class="post-feed">
+        <div id="content" class="post-feed">
             <?php
             if ( have_posts() ) :
 
