@@ -30,12 +30,12 @@ $geist_category_num_posts = $geist_categories[0]->category_count;
     <div class="inner">
         <div class="read-next-feed">
             <?php if( $geist_related->have_posts() ) { ?>
-                <article class="read-next-card">
-                    <header class="read-next-card-header"
-                        <?php if ( get_header_image() ){ ?>
+                <article class="read-next-card"
+                    <?php if ( get_header_image() ){ ?>
                             style="background-image: url(<?php header_image(); ?>)
-                        <?php } ?>
-                    ">
+                    <?php } ?>
+                ">
+                    <header class="read-next-card-header">
                         <small class="read-next-card-header-sitetitle">&mdash; <?php echo esc_html( get_bloginfo( 'name' ) ); ?> &mdash;</small>
                         <h3 class="read-next-card-header-title"><a href="<?php echo esc_url( $geist_category_url ); ?>"><?php echo esc_html( $geist_category_name ); ?></a></h3>
                     </header>
