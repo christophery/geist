@@ -63,7 +63,7 @@ $geist_author_post_count = count_user_posts( $geist_author_id );
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
-        <div class="post-feed">
+        <div id="content" class="post-feed">
             <?php
             /* Start the Loop */
             while ( have_posts() ) :

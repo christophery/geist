@@ -2675,6 +2675,50 @@ embed, iframe, object {
     order: 2;
 }
 
+/* Jetpack Infinite Scroll
+/* ---------------------------------------------------------- */
+
+.infinite-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infinite-scroll .posts-navigation{
+    display: none;
+}
+
+#infinite-footer {
+    display: none;
+}
+
+#infinite-handle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 5px 1.5vw 33px;
+}
+
+#infinite-handle span{
+    padding: 5px 16px;
+    border: 1px solid #aebbc1;
+    border-radius: 20px;
+    color: var(--midgrey);
+    transition: all .2s ease;
+    background: transparent;
+}
+
+#infinite-handle span:hover{
+    border-color: var(--blue);
+    color: var(--blue);
+    text-decoration: none;
+}
+
+#infinite-handle span button{
+    text-transform: capitalize;
+    font-size: 1.5rem !important;
+}
+
 /* Alignments
 /* ---------------------------------------------------------- */
 
