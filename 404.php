@@ -67,14 +67,14 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 
 
 			        	    <?php if ( has_post_thumbnail() ) { ?>
-			        	    <a class="post-card-image-link" href="<?php the_permalink(); ?>">
+			        	    <a class="post-card-image-link" href="<?php the_permalink(); ?>" aria-label="<?php printf( esc_html__( 'Read more about %s', 'geist' ), get_the_title() ); ?>">
 			        	        <?php the_post_thumbnail('medium_large',array('class' => 'post-card-image')); ?>
 			        	    </a>
 			        	    <?php } ?>
 
 			        	    <div class="post-card-content">
 
-			        	        <a class="post-card-content-link" href="<?php the_permalink(); ?>">
+			        	        <a class="post-card-content-link" href="<?php the_permalink(); ?>" aria-label="<?php printf( esc_html__( 'Read more about %s', 'geist' ), get_the_title() ); ?>">
 
 			        	            <header class="post-card-header">
 			        	                <span class="post-card-tags"><?php echo esc_html( $category_name ); ?></span>
@@ -97,11 +97,11 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 			        	                    </div>
 
 			        	                    <?php if( $geist_author_avatar ){ ?>
-			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar">
+			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar" aria-label="<?php printf( esc_html__( 'Read more posts by %s', 'geist' ), get_the_author() ); ?>">
                                                     <?php echo $geist_author_avatar; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
                                                 </a>
 			        	                    <?php }else{ ?>
-			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
+			        	                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar author-profile-image" aria-label="<?php printf( esc_html__( 'Read more posts by %s', 'geist' ), get_the_author() ); ?>"><?php get_template_part('template-parts/icons/avatar'); ?></a>
 			        	                    <?php } ?>
 			        	                </li>
 			        	            </ul>
