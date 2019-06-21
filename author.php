@@ -52,9 +52,9 @@ $geist_author_post_count = count_user_posts( $geist_author_id );
                     <span class="bull">&bull;</span>
                 </div>
                 <?php if( $geist_author_website ){ ?>
-                    <a class="social-link social-link-wb" href="<?php echo esc_url( $geist_author_website ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/website'); ?></a>
+                    <a class="social-link social-link-wb" href="<?php echo esc_url( $geist_author_website ); ?>" target="_blank" rel="noopener" aria-label="<?php esc_attr_e( 'Go to the authors website', 'geist' ) ?>"><?php get_template_part('template-parts/icons/website'); ?></a>
                 <?php } ?>
-                <a class="social-link social-link-rss" href="<?php bloginfo('rss_url'); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/rss'); ?></a>
+                <a class="social-link social-link-rss" href="<?php bloginfo('rss_url'); ?>" target="_blank" rel="noopener" aria-label="<?php esc_attr_e( 'Go to the authors RSS feed', 'geist' ) ?>"><?php get_template_part('template-parts/icons/rss'); ?></a>
             </div>
         </div>
     </div>

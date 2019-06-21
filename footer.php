@@ -22,11 +22,7 @@
                     <?php if ( get_theme_mod( 'geist_social_linkedin') ){ ?>
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_linkedin') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'LinkedIn', 'geist' ); ?></a>
                     <?php } ?>
-                    <a href="<?php echo esc_url( __( 'https://chrisyee.ca', 'geist' ) ); ?>" target="_blank" rel="noopener">
-                        <?php
-                        printf( esc_html__( 'Geist by Chris Yee', 'geist' ), 'WordPress' );
-                        ?>
-                    </a>
+                    <a href="<?php echo esc_url( __( 'https://chrisyee.ca', 'geist' ) ); ?>" target="_blank" rel="noopener"><?php esc_attr_e( 'Geist by Chris Yee', 'geist' ); ?></a>
                 </nav>
             </div>
         </footer>
@@ -34,7 +30,7 @@
     </div>
 
     <div id="search" class="search-overlay">
-        <button class="search-overlay-close"></button>
+        <button class="search-overlay-close" aria-label="close search overlay"></button>
         <div class="search-overlay-content">
             <?php get_search_form(); ?>
         </div>
