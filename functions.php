@@ -100,7 +100,7 @@ add_action( 'after_setup_theme', 'geist_content_width', 0 );
  */
 function geist_scripts() {
 	wp_enqueue_style( 'geist-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'geist-main-css', get_template_directory_uri() . '/built/screen.css', array(),'20190322' );
+	wp_enqueue_style( 'geist-main-css', get_template_directory_uri() . '/built/screen.css', array(),'20190621' );
 
 	wp_enqueue_script( 'geist-main-js', get_template_directory_uri() . '/built/main.js', array('jquery'), '20190322', true );
 
