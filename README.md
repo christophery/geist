@@ -15,6 +15,7 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 - Customizer
 - Social profiles
 - Responsive design
+- Infinite Scroll ([with Jetpack](https://jetpack.com/features/design/infinite-scroll/))
 
 ## Requirements
 
