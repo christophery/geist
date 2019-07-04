@@ -2711,7 +2711,7 @@ embed, iframe, object {
 
 #infinite-handle span:hover{
     border-color: var(--blue);
-    color: var(--blue);
+    color: var(--blue) !important;
     text-decoration: none;
 }
 
