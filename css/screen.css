@@ -2701,12 +2701,12 @@ embed, iframe, object {
 }
 
 #infinite-handle span{
-    padding: 5px 16px;
+    padding: 5px 16px !important;
     border: 1px solid #aebbc1;
-    border-radius: 20px;
-    color: var(--midgrey);
+    border-radius: 20px !important;
+    color: var(--midgrey) !important;
     transition: all .2s ease;
-    background: transparent;
+    background: transparent !important;
 }
 
 #infinite-handle span:hover{
