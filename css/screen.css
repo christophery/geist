@@ -2720,6 +2720,13 @@ embed, iframe, object {
     font-size: 1.5rem !important;
 }
 
+.infinite-loader{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 /* Alignments
 /* ---------------------------------------------------------- */
 
