@@ -2451,6 +2451,10 @@ embed, iframe, object {
     cursor: default;
 }
 
+.search-overlay label{
+    width: calc(100% - 70px);
+}
+
 /* Search Results
 /* ---------------------------------------------------------- */
 
