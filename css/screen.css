@@ -2725,10 +2725,12 @@ embed, iframe, object {
 }
 
 .infinite-loader{
-    display: flex;
-    justify-content: center;
     width: 100%;
     margin-bottom: 30px;
+}
+
+.infinite-loader .spinner{
+    margin: 0 auto;
 }
 
 /* Alignments
