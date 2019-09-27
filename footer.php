@@ -22,7 +22,7 @@
                     <?php if ( get_theme_mod( 'geist_social_linkedin') ){ ?>
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_linkedin') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'LinkedIn', 'geist' ); ?></a>
                     <?php } ?>
-                    <a href="<?php echo esc_url( __( 'https://chrisyee.ca', 'geist' ) ); ?>" target="_blank" rel="noopener"><?php esc_attr_e( 'Geist by Chris Yee', 'geist' ); ?></a>
+                    <a href="<?php echo esc_url( __( 'https://chrisyee.ca/geist', 'geist' ) ); ?>" target="_blank" rel="noopener"><?php esc_attr_e( 'Geist by Chris Yee', 'geist' ); ?></a>
                 </nav>
             </div>
         </footer>
