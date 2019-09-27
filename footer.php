@@ -8,7 +8,7 @@
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_facebook') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'Facebook', 'geist' ); ?></a>
                     <?php } ?>
                     <?php if ( get_theme_mod( 'geist_social_twitter') ){ ?>
-                        <a href="<?php echo esc_url( get_theme_mod( 'geist_social_facebook') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'Twitter', 'geist' ); ?></a>
+                        <a href="<?php echo esc_url( get_theme_mod( 'geist_social_twitter') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'Twitter', 'geist' ); ?></a>
                     <?php } ?>
                     <?php if ( get_theme_mod( 'geist_social_instagram') ){ ?>
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_instagram') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'Instagram', 'geist' ); ?></a>
