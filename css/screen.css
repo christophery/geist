@@ -2893,6 +2893,7 @@ embed, iframe, object {
 
 .comment{
     margin: 30px 0;
+    padding-left: 0;
 }
 
 .comment pre{
@@ -2908,6 +2909,11 @@ embed, iframe, object {
     padding: 3rem;
     box-shadow: 0 0 1px rgba(0,0,0,.06), 0 2px 6px rgba(0,0,0,.03);
     border-radius: 8px;
+}
+
+.comment .comment-respond{
+    padding-top: 6vw;
+    padding-bottom: 2vw;
 }
 
 .comment-author{
