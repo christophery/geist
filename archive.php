@@ -13,11 +13,10 @@ get_header();
 $geist_category = get_the_category();
 
 //get number of posts in category
-$geist_category_num_posts = $geist_category[0]->category_count;
+if( $geist_category ){
+	$geist_category_num_posts = $geist_category[0]->category_count;
+}
 ?>
-
-<?php if ( have_posts() ) : ?>
-
 	<!-- {!--Special header.hbs partial to generate the <header> tag--}} -->
 	<?php get_template_part('template-parts/header'); ?>
 	    <div class="inner">
@@ -36,6 +35,8 @@ $geist_category_num_posts = $geist_category[0]->category_count;
 	        	</h1>
 	            <h2 class="site-description">
 	            	<?php
+	            	if ( have_posts() ) :
+
 	            		//check if category description is set
 	            		if( category_description() ){
 	            			//output category description
@@ -50,16 +51,21 @@ $geist_category_num_posts = $geist_category[0]->category_count;
 	            				$geist_category_text = printf( esc_html__( 'A collection of %d post.', 'geist' ), esc_html ( $geist_category_num_posts ) );
 	            			}
 	            		}
+
+	            	endif;
 	            	?>
 	            </h2>
 	        </div>
 	    </div>
 	</header>
 
+
 	<main id="site-main" class="site-main outer">
 	    <div class="inner">
 	        <div id="content" class="post-feed">
-				<?php
+	        <?php
+	        if ( have_posts() ) :
+
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post();
@@ -74,12 +80,16 @@ $geist_category_num_posts = $geist_category[0]->category_count;
 				endwhile;
 
 				the_posts_navigation();
-				?>
+
+			else :
+
+				get_template_part( 'template-parts/content', 'none' );
+
+			endif;
+			?>
 	        </div>
 	    </div>
 	</main>
-
-<?php endif; ?>
 
 <?php
 get_footer();
