@@ -26,7 +26,7 @@ $geist_category_url = get_category_link( $geist_categories[0]->term_id );
 
             <?php if ( has_post_thumbnail() ) { ?>
             <figure class="post-full-image">
-                <?php the_post_thumbnail('medium_large',array('class' => 'feature_image')); ?>
+                <?php the_post_thumbnail('full',array('class' => 'feature_image')); ?>
             </figure>
             <?php } ?>
 

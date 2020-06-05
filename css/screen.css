@@ -84,9 +84,12 @@ body {
         margin-top: -70px;
         padding-top: 0;
     }
-    .home .site-nav {
+    .blog .site-nav {
         position: relative;
         top: -70px;
+    }
+    .archive .post-feed .no-results{
+        margin-top: 110px;
     }
 }
 
@@ -2461,6 +2464,7 @@ embed, iframe, object {
 .no-results{
     width: 100%;
     text-align: center;
+    padding: 0 6vw;
 }
 
 .no-results .search-form{
