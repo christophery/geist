@@ -1546,16 +1546,6 @@ Usage (In Ghost editor):
     opacity: 0.15;
 }
 
-
-/* Comments
-/* ---------------------------------------------------------- */
-
-.post-full-comments {
-    margin: 0 auto;
-    max-width: 840px;
-}
-
-
 /* Related posts
 /* ---------------------------------------------------------- */
 
@@ -2780,6 +2770,11 @@ embed, iframe, object {
 /* Comments
 /* ---------------------------------------------------------- */
 
+.post-full-comments {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
 .comment-respond{
     padding: 0 6vw 0;
 }
@@ -2876,6 +2871,13 @@ embed, iframe, object {
             box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
 
     -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.no-comments{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 /* Comments List */
