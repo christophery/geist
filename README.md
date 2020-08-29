@@ -10,6 +10,7 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 
 ## Features
 
+- [Gutenberg editor](https://wordpress.org/gutenberg/) support
 - Search
 - Comments
 - Customizer
