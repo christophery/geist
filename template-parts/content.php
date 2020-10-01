@@ -7,7 +7,7 @@
  * @package geist
  */
 
-$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $geist_author_avatar_args = array( 'class' => 'author-profile-image' ) );
+$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '' );
 
 $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) );
 

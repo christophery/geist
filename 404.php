@@ -60,7 +60,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
                             $geist_latest_posts->the_post();
 
     						//get author avatar
-    						$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '', $geist_author_avatar_args = array( 'class' => 'author-profile-image' ) );
+    						$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 30, '', '' );
 
                             ?>
 			        	<article <?php !has_post_thumbnail() ? post_class('post-card no-image') : post_class('post-card'); ?>>

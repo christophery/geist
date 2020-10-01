@@ -538,7 +538,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 0 25px 25px;
 }
 
-.author-profile-image,
+.avatar,
 .avatar-wrapper {
     display: block;
     width: 100%;
@@ -1338,7 +1338,7 @@ Usage (In Ghost editor):
     display: flex;
 }
 
-.author-card .author-profile-image,
+.author-card .avatar,
 .author-card .avatar-wrapper {
     margin-right: 15px;
     width: 60px;
@@ -1441,7 +1441,7 @@ Usage (In Ghost editor):
     padding: 10px 20px;
 }
 
-.author-card .author-profile-image,
+.author-card .avatar,
 .author-card .avatar-wrapper {
     position: relative;
     margin-right: 15px;
@@ -1523,7 +1523,7 @@ Usage (In Ghost editor):
     }
 }
 
-.basic-info .author-profile-image {
+.basic-info .avatar {
     margin: 0;
     width: 88px;
     height: 88px;
@@ -2167,7 +2167,7 @@ embed, iframe, object {
 /* Author Template
 /* ---------------------------------------------------------- */
 
-.site-header-content .author-profile-image {
+.site-header-content .avatar {
     z-index: 10;
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -2939,6 +2939,8 @@ embed, iframe, object {
     top: -5px;
     border-radius: 50%;
     margin-right: 10px;
+    width: 60px;
+    height: auto;
 }
 
 .comment-author a{
