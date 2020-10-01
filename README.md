@@ -24,17 +24,17 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 
 ## Install
 
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
+1. In your admin panel, go to **Appearance** > **Themes** and click the **Add New** button.
+2. Click **Upload Theme** and **Choose File**, then select the theme's .zip file. Click **Install Now**.
+3. Click **Activate** to use your new theme right away.
 
 ## Editing Geist
-The recommended way to edit the Geist theme is to [create a child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/).
+The recommended way to edit the theme is to [create a child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/).
 
-This will ensure that none of your changes will be lost when you update Geist.
+This will ensure that none of your changes will be lost when you update the theme.
 
 ## Development
-Geist CSS and JS are compiled and minified using Gulp. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com/) installed globally.
+The CSS and JS files are compiled and minified using Gulp. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com/) installed globally.
 
 **From the theme's root directory run:**
 
