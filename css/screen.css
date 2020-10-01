@@ -8,6 +8,7 @@ production stylesheet in built/screen.css
 
 /* Global - Set up the things
 /* ---------------------------------------------------------- */
+
 @import "global.css";
 
 body {
@@ -52,27 +53,19 @@ body {
 }
 
 /* Full width page blocks */
+
 .outer {
     position: relative;
     padding: 0 4vw;
 }
 
 /* Centered content container blocks */
+
 .inner {
     margin: 0 auto;
     max-width: 1040px;
     width: 100%;
 }
-
-/* Usage:
-
-<div class="outer">
-    <div class="inner">
-        Centered content
-    </div>
-</div>
-
-*/
 
 /* Special Template Styles
 /* ---------------------------------------------------------- */
@@ -762,6 +755,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 
 /* Adjust some margins for smaller screens */
+
 @media (max-width: 650px) {
     .post-feed {
         padding-top: 5vw;
@@ -1035,25 +1029,16 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* Full bleed images (#full)
 Super neat trick courtesy of @JoelDrapper
 
-Usage (In Ghost edtior):
-
-![img](/some/image.jpg#full)
-
 */
+
 .post-full-content img[src$="#full"] {
     max-width: none;
     width: 100vw;
 }
 
 
-/* Image captions
+/* Image captions */
 
-Usage (In Ghost editor):
-
-![img](/some/image.jpg)
-<small>Your image caption</small>
-
-*/
 .post-full-content img + br + small {
     display: block;
     margin-top: -3em;
@@ -1189,12 +1174,7 @@ Usage (In Ghost editor):
     line-height: 1.35em;
     text-align: center;
 }
-/*@media (min-width: 1180px) {
-    .post-full-content h5 {
-        max-width: 1060px;
-        width: 100vw;
-    }
-}*/
+
 @media (max-width: 500px) {
     .post-full-content h5 {
         padding: 0 0 0.5em;
@@ -1207,6 +1187,7 @@ Usage (In Ghost editor):
     font-size: 2.3rem;
     font-weight: 700;
 }
+
 @media (max-width: 500px) {
     .post-full-content h6 {
         font-size: 2rem;
@@ -1235,6 +1216,7 @@ Usage (In Ghost editor):
 }
 
 /* Some grouped styles for smaller viewports */
+
 @media (max-width: 500px) {
     .post-full-meta {
         font-size: 1.2rem;
@@ -1257,6 +1239,7 @@ Usage (In Ghost editor):
 }
 
 /* Tables */
+
 .post-full-content table {
     display: inline-block;
     overflow-x: auto;
@@ -1978,6 +1961,7 @@ Usage (In Ghost editor):
 }
 
 /* https://github.com/WordPress/gutenberg/issues/8289 */
+
 .post-content > *:not(.alignfull) {
     margin-left: auto;
     margin-right: auto;

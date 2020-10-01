@@ -68,6 +68,6 @@ if( $geist_categories ){
 
         </footer>
 
-    </div><!-- {{!--/.post-card-content--}} -->
+    </div><!-- .post-card-content -->
 
 </article>

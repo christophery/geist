@@ -9,7 +9,7 @@
 
 ?>
 
-<!-- {{!-- The big featured header, it uses blog cover image as a BG if available --}} -->
+<!-- The big featured header, it uses blog cover image as a BG if available -->
 <header class="site-header outer">
     <div class="inner">
         <?php get_template_part('template-parts/site-nav'); ?>

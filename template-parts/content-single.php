@@ -61,8 +61,8 @@ $geist_category_url = get_category_link( $geist_categories[0]->term_id );
     </div>
 </main>
 
-<!-- {{!-- Links to Previous/Next posts --}} -->
+<!-- Links to Previous/Next posts -->
 <?php get_template_part('template-parts/post-nav'); ?>
 
-<!-- {{!-- Floating header which appears on-scroll, included from includes/floating-header.hbs --}} -->
+<!-- Floating header which appears on-scroll -->
 <?php get_template_part('template-parts/floating-header'); ?>

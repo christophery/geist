@@ -17,7 +17,7 @@ if( $geist_category ){
 	$geist_category_num_posts = $geist_category[0]->category_count;
 }
 ?>
-	<!-- {!--Special header.hbs partial to generate the <header> tag--}} -->
+	<!-- Special header partial to generate the <header> tag--}} -->
 	<?php get_template_part('template-parts/header'); ?>
 	    <div class="inner">
 	        <?php get_template_part('template-parts/site-nav'); ?>

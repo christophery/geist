@@ -38,7 +38,7 @@ $geist_blog_description = get_bloginfo( 'description' );
     </div>
 </header>
 
-<!-- {{!-- The main content area --}} -->
+<!-- The main content area -->
 <main id="site-main" class="site-main outer">
     <div class="inner">
 
