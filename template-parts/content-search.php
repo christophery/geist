@@ -58,8 +58,6 @@ if( $geist_categories ){
                         <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar">
                             <?php echo $geist_author_avatar; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
                         </a>
-                    <?php }else{ ?>
-                        <a href="<?php echo esc_url( $geist_author_url ); ?>" class="static-avatar author-profile-image"><?php get_template_part('template-parts/icons/avatar'); ?></a>
                     <?php } ?>
                 </li>
             </ul>
