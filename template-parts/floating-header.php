@@ -17,7 +17,7 @@ $geist_post_url = get_the_permalink();
     <span class="floating-header-divider">&mdash;</span>
     <?php the_title( '<div class="floating-header-title">', '</div>' ); ?>
     <div class="floating-header-share">
-        <div class="floating-header-share-label">Share this <?php get_template_part('template-parts/icons/point'); ?></div>
+        <div class="floating-header-share-label"><?php printf( esc_html__( 'Share this', 'geist' ) ); ?> <?php get_template_part('template-parts/icons/point'); ?></div>
         <a class="floating-header-share-tw" href="https://twitter.com/share?text=<?php echo esc_html( $geist_post_title ); ?>&amp;url=<?php echo esc_url( $geist_post_url ); ?>"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <?php get_template_part('template-parts/icons/twitter'); ?>

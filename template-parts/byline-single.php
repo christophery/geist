@@ -19,10 +19,15 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
         <?php if( $geist_author_bio ){ ?>
             <p><?php echo esc_html( $geist_author_bio ); ?></p>
         <?php }else{ ?>
-            <p>Read <a href="<?php echo esc_url( $geist_author_url ); ?>">more posts</a> by this author.</p>
+            <p>
+                <?php
+                /* translators: %s: author URL. */
+                printf( __( 'Read <a href="%s">more posts</a> by this author.', 'geist' ), esc_url( $geist_author_url ) );
+                ?>
+            </p>
         <?php } ?>
     </section>
 </section>
 <div class="post-full-footer-right">
-    <a class="author-card-button" href="<?php echo esc_url( $geist_author_url ); ?>">Read More</a>
+    <a class="author-card-button" href="<?php echo esc_url( $geist_author_url ); ?>"><?php printf( esc_html__( 'Read More', 'geist' ) ); ?></a>
 </div>

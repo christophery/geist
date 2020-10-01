@@ -3,7 +3,7 @@
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="<?php echo esc_url( home_url() ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a> &copy; <?php echo esc_html( date("Y") ); ?></section>
                 <nav class="site-footer-nav">
-                    <a href="<?php echo esc_url( home_url() ); ?>">Latest Posts</a>
+                    <a href="<?php echo esc_url( home_url() ); ?>"><?php printf( esc_html__( 'Latest Posts', 'geist' ) ); ?></a>
                     <?php if ( get_theme_mod( 'geist_social_facebook') ){ ?>
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_facebook') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'Facebook', 'geist' ); ?></a>
                     <?php } ?>
