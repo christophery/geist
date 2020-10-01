@@ -1,6 +1,6 @@
 <?php
 
-$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 60, '', '' );
+$geist_author_avatar = get_avatar( get_the_author_meta( 'ID' ), 60 );
 
 $geist_author_bio = get_the_author_meta('description');
 
