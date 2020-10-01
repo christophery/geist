@@ -110,7 +110,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 
 			        	        </footer>
 
-			        	    </div><!-- {{!--/.post-card-content--}} -->
+			        	    </div><!-- .post-card-content -->
 
 			        	</article>
 			            		<?php
