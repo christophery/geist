@@ -9,6 +9,8 @@ production stylesheet in built/screen.css
 /* Global - Set up the things
 /* ---------------------------------------------------------- */
 
+@import "variables.css";
+
 @import "global.css";
 
 body {
