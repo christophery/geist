@@ -149,6 +149,41 @@ function geist_customize_register( $wp_customize ) {
 	    )
 	);
 
+	/**
+	 * Dark Mode
+	 */
+
+	$wp_customize->add_section(
+	    'geist_dark_mode',
+	    array(
+	        'title'     => 'Dark Mode',
+	        'priority'  => 200
+	    )
+	);
+
+	$wp_customize->add_setting( 'geist_dark_mode_toggle' , array(
+	    'default'     => 'light',
+	    'transport'   => 'refresh',
+	) );
+
+	$wp_customize->add_control(
+	    new WP_Customize_Control(
+	        $wp_customize,
+	        'geist_dark_mode_toggle',
+	        array(
+	            'label'      => __( 'Appearance', 'geist' ),
+	            'description' => __( 'Auto automatically adjusts the appearance based on the users OS appearance/color preference.', 'geist' ),
+	            'section'    => 'geist_dark_mode',
+	            'settings'   => 'geist_dark_mode_toggle',
+	            'type'    => 'radio',
+	            'choices' => array(
+                    'light' => 'Light',
+                    'auto' => 'Auto',
+                )
+	        )
+	    )
+	);
+
 }
 add_action( 'customize_register', 'geist_customize_register' );
 

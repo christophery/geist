@@ -103,7 +103,9 @@ function geist_scripts() {
 	wp_enqueue_style( 'geist-main-css', get_template_directory_uri() . '/built/screen.css', array(),'20201001' );
 
 	// Dark mode
-	wp_enqueue_style( 'geist-dark-mode', get_template_directory_uri() . '/built/dark-mode.css', array(),'20201002' );
+	if ( get_theme_mod( 'geist_dark_mode_toggle') === 'auto' ){
+		wp_enqueue_style( 'geist-dark-mode', get_template_directory_uri() . '/built/dark-mode.css', array(),'20201002' );
+	}
 
 	wp_enqueue_script( 'geist-main-js', get_template_directory_uri() . '/built/main.js', array('jquery'), '20190322', true );
 
