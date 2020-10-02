@@ -193,6 +193,39 @@
         box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
     }
 
+    /* Comments */
+
+    #comments{
+        background: color(var(--darkmode) l(-6%));
+        border: none;
+    }
+
+    #reply-title,
+    .comments-title,
+    .comment-author a{
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .comment .comment-body{
+        background: var(--darkmode);
+    }
+
+    #comments textarea,
+    #comments input[type='text'],
+    #comments input[type='email'],
+    #comments input[type='url']{
+        border-color: color(var(--darkmode) l(+6%));
+        color: rgba(255, 255, 255, 0.9);
+        background: color(var(--darkmode) l(+3%));
+    }
+
+    #comments textarea:focus,
+    #comments input[type='text']:focus,
+    #comments input[type='email']:focus,
+    #comments input[type='url']:focus{
+        border-color: color(var(--darkmode) l(+25%));
+    }
+
     /* Search Overlay */
 
     .search-overlay {
