@@ -193,42 +193,11 @@
         box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
     }
 
-    /* Subscribe Form */
+    /* Search Overlay */
 
-    .subscribe-form {
+    .search-overlay {
         border: none;
         background: linear-gradient(color(var(--darkmode) l(-6%)), color(var(--darkmode) l(-3%)));
-    }
-
-    .subscribe-form-title {
-        color: rgba(255, 255, 255, 0.9);
-    }
-
-    .subscribe-form p {
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    .subscribe-email {
-        border-color: color(var(--darkmode) l(+6%));
-        color: rgba(255, 255, 255, 0.9);
-        background: color(var(--darkmode) l(+3%));
-    }
-
-    .subscribe-email:focus {
-        border-color: color(var(--darkmode) l(+25%));
-    }
-
-    .subscribe-form button {
-        opacity: 0.9;
-    }
-
-    .subscribe-form .invalid .message-error,
-    .subscribe-form .error .message-error {
-        color: color(var(--red) l(+5%) s(-5%));
-    }
-
-    .subscribe-form .success .message-success {
-        color: color(var(--green) l(+5%) s(-5%));
     }
 
     /* Floating Header */
