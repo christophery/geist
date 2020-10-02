@@ -15,9 +15,9 @@
         opacity: 0.9;
     }
 
-    .site-header-background:before {
+    /*.site-header-background:before {
         background: rgba(0,0,0,0.6);
-    }
+    }*/
 
     /*.post-feed {
         background: var(--darkmode);
@@ -41,15 +41,15 @@
         border-bottom-color: color(var(--darkmode) l(+8%));
     }
 
-    .author-profile-image {
+    .avatar {
         background: var(--darkmode);
     }
 
-    .post-card-byline-content a {
+    .author-card-name a {
         color: rgba(255, 255, 255, 0.75);
     }
 
-    .post-card-byline-content a:hover {
+    .author-card-name a:hover {
         color: #fff;
     }
 
@@ -65,7 +65,7 @@
         color: color(var(--midgrey) l(+10%));
     }
 
-    .author-avatar,
+    .moving-avatar,
     .static-avatar {
         border-color: color(var(--darkgrey) l(+2%));
     }
@@ -92,7 +92,7 @@
         background-color: color(var(--darkmode) l(+8%));
     }
 
-    .post-full-byline {
+    /*.post-full-byline {
         border-top-color: color(var(--darkmode) l(+15%));
     }
 
@@ -102,7 +102,7 @@
 
     .post-full-byline-meta h4 a:hover {
         color: #fff;
-    }
+    }*/
 
     .author-list-item .author-card {
         background: color(var(--darkmode) l(+4%));
@@ -180,16 +180,16 @@
         box-shadow: 0 0 1px rgba(255,255,255,0.9);
     }
 
-    .site-archive-header .no-image {
+    /*.site-archive-header .no-image {
         color: rgba(255, 255, 255, 0.9);
         background: var(--darkmode);
     }
 
     .site-archive-header .no-image .site-header-content {
         border-bottom-color: color(var(--darkmode) l(+15%));
-    }
+    }*/
 
-    .site-header-content .author-profile-image {
+    .site-header-content .avatar {
         box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
     }
 
@@ -240,7 +240,8 @@
     }
 
     .floating-header-title,
-    .floating-header-logo a{
+    .floating-header-logo a,
+    .floating-header-share-label{
         color: #fff;
     }
 
