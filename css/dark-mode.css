@@ -242,7 +242,15 @@
     .floating-header-title,
     .floating-header-logo a,
     .floating-header-share-label{
-        color: #fff;
+        color: #FFF;
+    }
+
+    /* Pagination */
+
+    .nav-next a,
+    .nav-previous a{
+        border-color: #FFF;
+        color: #FFF;
     }
 
 }
