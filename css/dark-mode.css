@@ -28,7 +28,9 @@
         box-shadow: none;
     }
 
-    .post-card-excerpt{
+    .post-card-excerpt,
+    .reading-time,
+    .post-card-tags{
         color: color(var(--midgrey) l(+10%));
     }
 
@@ -51,6 +53,15 @@
 
     .author-card-name a:hover {
         color: #fff;
+    }
+
+    .author-card-content p{
+        color: color(var(--midgrey) l(+10%));
+    }
+
+    .author-card-button{
+        border-color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
     }
 
     .post-card-image {
@@ -126,20 +137,20 @@
     }
 
     .post-full-content a {
-        color: #fff;
+        color: #FFF;
         box-shadow: inset 0 -1px 0 #fff;
     }
 
     .post-full-content strong {
-        color: #fff;
+        color: #FFF;
     }
 
     .post-full-content em {
-        color: #fff;
+        color: #FFF;
     }
 
     .post-full-content code {
-        color: #fff;
+        color: #FFF;
         background: #000;
     }
 
@@ -249,8 +260,8 @@
 
     .nav-next a,
     .nav-previous a{
-        border-color: #FFF;
-        color: #FFF;
+        border-color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
     }
 
 }
