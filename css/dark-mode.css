@@ -8,20 +8,17 @@
 
     body {
         color: rgba(255, 255, 255, 0.75);
+    }
+
+    body,
+    .single-post .site-main,
+    .page .site-main {
         background: var(--darkmode);
     }
 
     img {
         opacity: 0.9;
     }
-
-    /*.site-header-background:before {
-        background: rgba(0,0,0,0.6);
-    }*/
-
-    /*.post-feed {
-        background: var(--darkmode);
-    }*/
 
     .post-card{
         background: color(var(--darkmode) l(-6%));
@@ -81,12 +78,6 @@
         border-color: color(var(--darkgrey) l(+2%));
     }
 
-    .site-main,
-    .single-post .site-main,
-    .page .site-main {
-        background: var(--darkmode);
-    }
-
     .post-full-content {
         background: var(--darkmode);
     }
@@ -102,18 +93,6 @@
     .post-full-image {
         background-color: color(var(--darkmode) l(+8%));
     }
-
-    /*.post-full-byline {
-        border-top-color: color(var(--darkmode) l(+15%));
-    }
-
-    .post-full-byline-meta h4 a {
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .post-full-byline-meta h4 a:hover {
-        color: #fff;
-    }*/
 
     .author-list-item .author-card {
         background: color(var(--darkmode) l(+4%));
@@ -190,15 +169,6 @@
         color: rgba(255, 255, 255, 0.75);
         box-shadow: 0 0 1px rgba(255,255,255,0.9);
     }
-
-    /*.site-archive-header .no-image {
-        color: rgba(255, 255, 255, 0.9);
-        background: var(--darkmode);
-    }
-
-    .site-archive-header .no-image .site-header-content {
-        border-bottom-color: color(var(--darkmode) l(+15%));
-    }*/
 
     .site-header-content .avatar {
         box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
