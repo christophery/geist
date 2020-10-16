@@ -1020,6 +1020,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 2em auto;
     height: auto;
 }
+
 @media (max-width: 1040px) {
     .post-full-content img,
     .post-full-content video {
@@ -2048,6 +2049,15 @@ embed, iframe, object {
 .post-content .wp-block-separator.is-style-dots,
 .post-content hr.is-style-dots{
     max-width: 100%;
+}
+
+.wp-block-cover{
+    margin: 2em auto;
+}
+
+.wp-block-cover video{
+    margin-top: 0;
+    height: 100%;
 }
 
 /* Galleries
