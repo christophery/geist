@@ -172,13 +172,13 @@ function geist_customize_register( $wp_customize ) {
 	        'geist_dark_mode_toggle',
 	        array(
 	            'label'      => __( 'Appearance', 'geist' ),
-	            'description' => __( 'Auto automatically adjusts the appearance based on the users OS appearance/color preference.', 'geist' ),
+	            'description' => __( 'Dark (auto) will automatically adjust the appearance based on the users OS appearance/color preference.', 'geist' ),
 	            'section'    => 'geist_dark_mode',
 	            'settings'   => 'geist_dark_mode_toggle',
 	            'type'    => 'radio',
 	            'choices' => array(
                     'light' => 'Light',
-                    'auto' => 'Auto',
+                    'auto' => 'Dark (auto)',
                 )
 	        )
 	    )
