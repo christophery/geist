@@ -227,6 +227,11 @@
         border-color: color-mod(var(--darkmode) l(+25%));
     }
 
+    .comment-edit-link,
+    .comment-reply-link{
+        color: rgba(255, 255, 255, 0.75);
+    }
+
     /* Search Overlay */
 
     .search-overlay {
