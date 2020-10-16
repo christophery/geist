@@ -993,6 +993,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     word-break: break-word;
     -webkit-box-shadow: var(--blue) 0 -1px 0 inset;
             box-shadow: var(--blue) 0 -1px 0 inset;
+    transition: all .2s ease-in-out;
 }
 
 .post-full-content a:hover {

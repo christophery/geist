@@ -120,6 +120,10 @@
         box-shadow: inset 0 -1px 0 #fff;
     }
 
+    .post-full-content a:hover{
+        box-shadow: inset 0 -1px 0 var(--blue);
+    }
+
     .wp-block-file .wp-block-file__button{
         box-shadow: none;
     }
