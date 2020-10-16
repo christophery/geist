@@ -278,4 +278,8 @@
         color: rgba(255, 255, 255, 0.75);
     }
 
+    #infinite-handle span{
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
 }
