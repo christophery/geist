@@ -198,6 +198,10 @@
         color: rgba(255, 255, 255, 0.9);
     }
 
+    .read-next-card{
+        box-shadow: none;
+    }
+
     /* Comments */
 
     #comments{
