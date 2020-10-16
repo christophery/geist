@@ -28,7 +28,7 @@
         "gulp-postcss": "8.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "4.2.0",
-        "postcss-color-function": "4.0.1",
+        "postcss-color-mod-function": "3.0.3",
         "postcss-custom-properties": "8.0.9",
         "postcss-easy-import": "3.0.0",
         "pump": "3.0.0"

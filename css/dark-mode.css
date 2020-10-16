@@ -21,14 +21,14 @@
     }
 
     .post-card{
-        background: color(var(--darkmode) l(-6%));
+        background: color-mod(var(--darkmode) l(-6%));
         box-shadow: none;
     }
 
     .post-card-excerpt,
     .reading-time,
     .post-card-tags{
-        color: color(var(--midgrey) l(+10%));
+        color: color-mod(var(--midgrey) l(+10%));
     }
 
     .sticky .post-card-excerpt{
@@ -37,7 +37,7 @@
 
     .post-card,
     .post-card:hover {
-        border-bottom-color: color(var(--darkmode) l(+8%));
+        border-bottom-color: color-mod(var(--darkmode) l(+8%));
     }
 
     .avatar {
@@ -53,7 +53,7 @@
     }
 
     .author-card-content p{
-        color: color(var(--midgrey) l(+10%));
+        color: color-mod(var(--midgrey) l(+10%));
     }
 
     .author-card-button{
@@ -70,12 +70,12 @@
     }
 
     .post-card-excerpt {
-        color: color(var(--midgrey) l(+10%));
+        color: color-mod(var(--midgrey) l(+10%));
     }
 
     .moving-avatar,
     .static-avatar {
-        border-color: color(var(--darkgrey) l(+2%));
+        border-color: color-mod(var(--darkgrey) l(+2%));
     }
 
     .post-full-content {
@@ -87,20 +87,20 @@
     }
 
     .post-full-custom-excerpt {
-        color: color(var(--midgrey) l(+10%));
+        color: color-mod(var(--midgrey) l(+10%));
     }
 
     .post-full-image {
-        background-color: color(var(--darkmode) l(+8%));
+        background-color: color-mod(var(--darkmode) l(+8%));
     }
 
     .author-list-item .author-card {
-        background: color(var(--darkmode) l(+4%));
+        background: color-mod(var(--darkmode) l(+4%));
         box-shadow: 0 12px 26px rgba(0,0,0,0.4);
     }
 
     .author-list-item .author-card:before {
-        border-top-color: color(var(--darkmode) l(+4%));
+        border-top-color: color-mod(var(--darkmode) l(+4%));
     }
 
     .no-image .author-social-link a {
@@ -138,11 +138,11 @@
     }
 
     hr {
-        border-top-color: color(var(--darkmode) l(+8%));
+        border-top-color: color-mod(var(--darkmode) l(+8%));
     }
 
     .post-full-content hr:after {
-        background: color(var(--darkmode) l(+8%));
+        background: color-mod(var(--darkmode) l(+8%));
         box-shadow: var(--darkmode) 0 0 0 5px;
     }
 
@@ -151,21 +151,21 @@
     }
 
     .post-full-content table td:first-child {
-        background-image: linear-gradient(to right, var(--darkmode) 50%, color(var(--darkmode) a(0%)) 100%);
+        background-image: linear-gradient(to right, var(--darkmode) 50%, color-mod(var(--darkmode) a(0%)) 100%);
     }
 
     .post-full-content table td:last-child {
-        background-image: linear-gradient(to left, var(--darkmode) 50%, color(var(--darkmode) a(0%)) 100%);
+        background-image: linear-gradient(to left, var(--darkmode) 50%, color-mod(var(--darkmode) a(0%)) 100%);
     }
 
     .post-full-content table th {
         color: rgba(255, 255, 255, 0.85);
-        background-color: color(var(--darkmode) l(+8%));
+        background-color: color-mod(var(--darkmode) l(+8%));
     }
 
     .post-full-content table th,
     .post-full-content table td {
-        border: color(var(--darkmode) l(+8%)) 1px solid;
+        border: color-mod(var(--darkmode) l(+8%)) 1px solid;
     }
 
     .post-full-content .kg-bookmark-container,
@@ -180,9 +180,9 @@
 
     .post-full-content input,
     .page-content input{
-        border-color: color(var(--darkmode) l(+6%));
+        border-color: color-mod(var(--darkmode) l(+6%));
         color: rgba(255, 255, 255, 0.9);
-        background: color(var(--darkmode) l(+3%));
+        background: color-mod(var(--darkmode) l(+3%));
     }
 
     .post-password-form input[type="password"]{
@@ -197,7 +197,7 @@
     /* Comments */
 
     #comments{
-        background: color(var(--darkmode) l(-6%));
+        background: color-mod(var(--darkmode) l(-6%));
         border: none;
     }
 
@@ -215,23 +215,23 @@
     #comments input[type='text'],
     #comments input[type='email'],
     #comments input[type='url']{
-        border-color: color(var(--darkmode) l(+6%));
+        border-color: color-mod(var(--darkmode) l(+6%));
         color: rgba(255, 255, 255, 0.9);
-        background: color(var(--darkmode) l(+3%));
+        background: color-mod(var(--darkmode) l(+3%));
     }
 
     #comments textarea:focus,
     #comments input[type='text']:focus,
     #comments input[type='email']:focus,
     #comments input[type='url']:focus{
-        border-color: color(var(--darkmode) l(+25%));
+        border-color: color-mod(var(--darkmode) l(+25%));
     }
 
     /* Search Overlay */
 
     .search-overlay {
         border: none;
-        background: linear-gradient(color(var(--darkmode) l(-6%)), color(var(--darkmode) l(-3%)));
+        background: linear-gradient(color-mod(var(--darkmode) l(-6%)), color-mod(var(--darkmode) l(-3%)));
     }
 
     .search-overlay input[type="search"]{
@@ -241,7 +241,7 @@
     /* Floating Header */
 
     .floating-header{
-        background: color(var(--darkgrey) l(-5%));
+        background: color-mod(var(--darkgrey) l(-5%));
     }
 
     .floating-header-title,

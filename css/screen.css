@@ -97,7 +97,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: color-mod(var(--darkgrey) l(-5%)) no-repeat center center;
     background-size: cover;
 }
 
@@ -538,7 +538,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     width: 100%;
     height: 100%;
-    background: color(var(--lightgrey) l(+10%));
+    background: color-mod(var(--lightgrey) l(+10%));
     border-radius: 100%;
 
     -o-object-fit: cover;
@@ -858,7 +858,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-title {
     margin: 0;
-    color: color(var(--darkgrey) l(-5%));
+    color: color-mod(var(--darkgrey) l(-5%));
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
@@ -1002,7 +1002,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-content strong,
 .post-full-content em {
-    color: color(var(--darkgrey) l(-5%));
+    color: color-mod(var(--darkgrey) l(-5%));
 }
 
 .post-full-content small {
@@ -1088,11 +1088,11 @@ Super neat trick courtesy of @JoelDrapper
     margin: 1.5em 0 3em;
     padding: 20px;
     max-width: 100%;
-    border: color(var(--darkgrey) l(-10%)) 1px solid;
+    border: color-mod(var(--darkgrey) l(-10%)) 1px solid;
     color: var(--whitegrey);
     font-size: 1.4rem;
     line-height: 1.5em;
-    background: color(var(--darkgrey) l(-3%));
+    background: color-mod(var(--darkgrey) l(-3%));
     border-radius: 5px;
 }
 
@@ -1117,7 +1117,7 @@ Super neat trick courtesy of @JoelDrapper
 .post-full-content h4,
 .post-full-content h5,
 .post-full-content h6 {
-    color: color(var(--darkgrey) l(-5%));
+    color: color-mod(var(--darkgrey) l(-5%));
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -1286,13 +1286,13 @@ Super neat trick courtesy of @JoelDrapper
     letter-spacing: 0.2px;
     text-align: left;
     text-transform: uppercase;
-    background-color: color(var(--whitegrey) l(+4%));
+    background-color: color-mod(var(--whitegrey) l(+4%));
 }
 
 .post-full-content table th,
 .post-full-content table td {
     padding: 6px 12px;
-    border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid;
+    border: color-mod(var(--whitegrey) l(-1%) s(-5%)) 1px solid;
 }
 
 /* Post Footer
@@ -1360,7 +1360,7 @@ Super neat trick courtesy of @JoelDrapper
 .author-card-button {
     display: block;
     padding: 9px 16px;
-    border: color(var(--midgrey) l(+20%)) 1px solid;
+    border: color-mod(var(--midgrey) l(+20%)) 1px solid;
     color: var(--midgrey);
     font-size: 1.2rem;
     line-height: 1;
@@ -1395,7 +1395,7 @@ Super neat trick courtesy of @JoelDrapper
             align-items: center;
     margin-top: 20px;
     padding-top: 40px;
-    border-top: color(var(--lightgrey) l(+10%)) 1px solid;
+    border-top: color-mod(var(--lightgrey) l(+10%)) 1px solid;
 }
 
 .post-full-authors-content {
@@ -1413,7 +1413,7 @@ Super neat trick courtesy of @JoelDrapper
 
 .post-full-authors-content a {
     display: inline-block;
-    color: color(var(--darkgrey) l(+20%));
+    color: color-mod(var(--darkgrey) l(+20%));
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -2500,7 +2500,7 @@ embed, iframe, object {
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: color-mod(var(--darkgrey) l(-15%));
 }
 
 .site-footer-content {
@@ -2841,16 +2841,16 @@ embed, iframe, object {
     background: -webkit-gradient(
     linear,
     left top, left bottom,
-    from(color(var(--blue) whiteness(+7%))),
-    color-stop(60%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    color-stop(90%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    to(color(var(--blue) lightness(-4%) saturation(-10%)))
+    from(color-mod(var(--blue) whiteness(+7%))),
+    color-stop(60%, color-mod(var(--blue) lightness(-7%) saturation(-10%))),
+    color-stop(90%, color-mod(var(--blue) lightness(-7%) saturation(-10%))),
+    to(color-mod(var(--blue) lightness(-4%) saturation(-10%)))
     );
     background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
+    color-mod(var(--blue) whiteness(+7%)),
+    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+    color-mod(var(--blue) lightness(-4%) saturation(-10%))
     );
     border-radius: 5px;
     border: 0;
@@ -3061,16 +3061,16 @@ embed, iframe, object {
     background: -webkit-gradient(
     linear,
     left top, left bottom,
-    from(color(var(--blue) whiteness(+7%))),
-    color-stop(60%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    color-stop(90%, color(var(--blue) lightness(-7%) saturation(-10%))),
-    to(color(var(--blue) lightness(-4%) saturation(-10%)))
+    from(color-mod(var(--blue) whiteness(+7%))),
+    color-stop(60%, color-mod(var(--blue) lightness(-7%) saturation(-10%))),
+    color-stop(90%, color-mod(var(--blue) lightness(-7%) saturation(-10%))),
+    to(color-mod(var(--blue) lightness(-4%) saturation(-10%)))
     );
     background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
+    color-mod(var(--blue) whiteness(+7%)),
+    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+    color-mod(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+    color-mod(var(--blue) lightness(-4%) saturation(-10%))
     );
     border-radius: 5px;
     border: 0;
