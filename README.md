@@ -33,10 +33,10 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 
 Dark mode is not enabled by default. To enable this feature go to **Appearance** > **Customize** > **Dark Mode**.
 
-###Light
+### Light
 This will display the theme in light mode for everyone.
 
-###Dark (auto)
+### Dark (auto)
 This will automatically adjust the appearance based on the users OS appearance/color preference.
 
 ## Editing Geist
