@@ -11,7 +11,7 @@ const beeper = require('beeper');
 
 // postcss plugins
 const autoprefixer = require('autoprefixer');
-const colorFunction = require('postcss-color-function');
+const colorFunction = require('postcss-color-mod-function');
 const cssnano = require('cssnano');
 const customProperties = require('postcss-custom-properties');
 const easyimport = require('postcss-easy-import');
@@ -36,7 +36,7 @@ function css(done) {
         easyimport,
         customProperties({preserve: false}),
         colorFunction(),
-        autoprefixer({browsers: ['last 2 versions']}),
+        autoprefixer({browsers: ['last 2 versions','not dead','> 0.2%']}),
         cssnano()
     ];
 

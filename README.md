@@ -10,13 +10,14 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 
 ## Features
 
-- [Gutenberg editor](https://wordpress.org/gutenberg/) support
+- [Gutenberg Editor](https://wordpress.org/gutenberg/) Support
 - Search
 - Comments
 - Customizer
-- Social profiles
-- Responsive design
+- Social Profiles
+- Responsive Design
 - Infinite Scroll ([with Jetpack](https://jetpack.com/features/design/infinite-scroll/))
+- Dark Mode
 
 ## Requirements
 
@@ -27,6 +28,16 @@ Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one
 1. In your admin panel, go to **Appearance** > **Themes** and click the **Add New** button.
 2. Click **Upload Theme** and **Choose File**, then select the theme's .zip file. Click **Install Now**.
 3. Click **Activate** to use your new theme right away.
+
+## Dark Mode
+
+Dark mode is not enabled by default. To enable this feature go to **Appearance** > **Customize** > **Dark Mode**.
+
+###Light
+This will display the theme in light mode for everyone.
+
+###Dark (auto)
+This will automatically adjust the appearance based on the users OS appearance/color preference.
 
 ## Editing Geist
 The recommended way to edit the theme is to [create a child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/).

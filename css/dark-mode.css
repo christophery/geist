@@ -1,0 +1,285 @@
+/*--------------------------------------------------------------
+# Dark Mode
+--------------------------------------------------------------*/
+
+@import "variables.css";
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    body,
+    .single-post .site-main,
+    .page .site-main {
+        background: var(--darkmode);
+    }
+
+    img {
+        opacity: 0.9;
+    }
+
+    .post-card{
+        background: color-mod(var(--darkmode) l(-6%));
+        box-shadow: none;
+    }
+
+    .post-card-excerpt,
+    .reading-time,
+    .post-card-tags{
+        color: color-mod(var(--midgrey) l(+10%));
+    }
+
+    .sticky .post-card-excerpt{
+       color: #FFF;
+    }
+
+    .post-card,
+    .post-card:hover {
+        border-bottom-color: color-mod(var(--darkmode) l(+8%));
+    }
+
+    .avatar {
+        background: var(--darkmode);
+    }
+
+    .author-card-name a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .author-card-name a:hover {
+        color: #fff;
+    }
+
+    .author-card-content p{
+        color: color-mod(var(--midgrey) l(+10%));
+    }
+
+    .author-card-button{
+        border-color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .post-card-image {
+        background: var(--darkmode);
+    }
+
+    .post-card-title {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .post-card-excerpt {
+        color: color-mod(var(--midgrey) l(+10%));
+    }
+
+    .moving-avatar,
+    .static-avatar {
+        border-color: color-mod(var(--darkgrey) l(+2%));
+    }
+
+    .post-full-content {
+        background: var(--darkmode);
+    }
+
+    .post-full-title {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .post-full-custom-excerpt {
+        color: color-mod(var(--midgrey) l(+10%));
+    }
+
+    .post-full-image {
+        background-color: color-mod(var(--darkmode) l(+8%));
+    }
+
+    .author-list-item .author-card {
+        background: color-mod(var(--darkmode) l(+4%));
+        box-shadow: 0 12px 26px rgba(0,0,0,0.4);
+    }
+
+    .author-list-item .author-card:before {
+        border-top-color: color-mod(var(--darkmode) l(+4%));
+    }
+
+    .no-image .author-social-link a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .post-full-content h1,
+    .post-full-content h2,
+    .post-full-content h3,
+    .post-full-content h4,
+    .post-full-content h6 {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .post-full-content a {
+        color: #FFF;
+        box-shadow: inset 0 -1px 0 #fff;
+    }
+
+    .post-full-content a:hover{
+        box-shadow: inset 0 -1px 0 var(--blue);
+    }
+
+    .wp-block-file .wp-block-file__button{
+        box-shadow: none;
+    }
+
+    .post-full-content strong {
+        color: #FFF;
+    }
+
+    .post-full-content em {
+        color: #FFF;
+    }
+
+    .post-full-content code {
+        color: #FFF;
+        background: #000;
+    }
+
+    hr {
+        border-top-color: color-mod(var(--darkmode) l(+8%));
+    }
+
+    .post-full-content hr:after {
+        background: color-mod(var(--darkmode) l(+8%));
+        box-shadow: var(--darkmode) 0 0 0 5px;
+    }
+
+    .post-full-content figcaption {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .post-full-content table td:first-child {
+        background-image: linear-gradient(to right, var(--darkmode) 50%, color-mod(var(--darkmode) a(0%)) 100%);
+    }
+
+    .post-full-content table td:last-child {
+        background-image: linear-gradient(to left, var(--darkmode) 50%, color-mod(var(--darkmode) a(0%)) 100%);
+    }
+
+    .post-full-content table th {
+        color: rgba(255, 255, 255, 0.85);
+        background-color: color-mod(var(--darkmode) l(+8%));
+    }
+
+    .post-full-content table th,
+    .post-full-content table td {
+        border: color-mod(var(--darkmode) l(+8%)) 1px solid;
+    }
+
+    .post-full-content .kg-bookmark-container,
+    .post-full-content .kg-bookmark-container:hover {
+        color: rgba(255, 255, 255, 0.75);
+        box-shadow: 0 0 1px rgba(255,255,255,0.9);
+    }
+
+    .site-header-content .avatar {
+        box-shadow: 0 0 0 6px hsla(0,0%,100%,0.04);
+    }
+
+    .post-full-content input,
+    .page-content input{
+        border-color: color-mod(var(--darkmode) l(+6%));
+        color: rgba(255, 255, 255, 0.9);
+        background: color-mod(var(--darkmode) l(+3%));
+    }
+
+    .post-password-form input[type="password"]{
+        color: rgba(255, 255, 255, 0.9);
+        border: 0;
+    }
+
+    .no-results .search-field{
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .read-next-card{
+        box-shadow: none;
+    }
+
+    /* Error Template */
+
+    .error-code{
+        color: var(--lightgrey);
+        opacity: 0.75;
+    }
+
+    /* Comments */
+
+    #comments{
+        background: color-mod(var(--darkmode) l(-6%));
+        border: none;
+    }
+
+    #reply-title,
+    .comments-title,
+    .comment-author a{
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .comment .comment-body{
+        background: var(--darkmode);
+    }
+
+    #comments textarea,
+    #comments input[type='text'],
+    #comments input[type='email'],
+    #comments input[type='url']{
+        border-color: color-mod(var(--darkmode) l(+6%));
+        color: rgba(255, 255, 255, 0.9);
+        background: color-mod(var(--darkmode) l(+3%));
+    }
+
+    #comments textarea:focus,
+    #comments input[type='text']:focus,
+    #comments input[type='email']:focus,
+    #comments input[type='url']:focus{
+        border-color: color-mod(var(--darkmode) l(+25%));
+    }
+
+    .comment-edit-link,
+    .comment-reply-link{
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    /* Search Overlay */
+
+    .search-overlay {
+        border: none;
+        background: linear-gradient(color-mod(var(--darkmode) l(-6%)), color-mod(var(--darkmode) l(-3%)));
+    }
+
+    .search-overlay input[type="search"]{
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Floating Header */
+
+    .floating-header{
+        background: color-mod(var(--darkgrey) l(-5%));
+    }
+
+    .floating-header-title,
+    .floating-header-logo a,
+    .floating-header-share-label{
+        color: #FFF;
+    }
+
+    /* Pagination */
+
+    .nav-next a,
+    .nav-previous a{
+        border-color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    #infinite-handle span{
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+}
