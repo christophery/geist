@@ -36,7 +36,7 @@ function css(done) {
         easyimport,
         customProperties({preserve: false}),
         colorFunction(),
-        autoprefixer({browsers: ['last 2 versions']}),
+        autoprefixer({browsers: ['last 2 versions','not dead','> 0.2%']}),
         cssnano()
     ];
 
