@@ -2794,6 +2794,11 @@ embed, iframe, object {
     margin: 0 0 10px;
 }
 
+#reply-title small{
+    display: block;
+    margin-top: 10px;
+}
+
 .comment-notes,
 .logged-in-as{
     margin-bottom: 1em;
