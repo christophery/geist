@@ -17,7 +17,7 @@ $geist_category_url = get_category_link( $geist_categories[0]->term_id );
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="<?php echo get_the_date('F j, Y'); ?>"><?php echo get_the_date('F j, Y'); ?></time>
+                    <time class="post-full-meta-date" datetime="<?php echo get_the_date(); ?>"><?php echo get_the_date(); ?></time>
                     <span class='date-divider'>/</span>
                     <a href='<?php echo esc_url( $geist_category_url ); ?>'><?php echo esc_html( $geist_category_name ); ?></a>
                 </section>
