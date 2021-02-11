@@ -86,4 +86,4 @@ FitVids, Copyright 2013 [Chris Coyier](https://chriscoyier.net/) and [Dave Ruper
 **Source:** [https://github.com/davatron5000/FitVids.js](https://github.com/davatron5000/FitVids.js)  
 
 ## License
-Geist, Copyright (c) 2020 [Chris Yee](https://chrisyee.ca) - Released under the [GPL v2.0 license](https://www.gnu.org/licenses/gpl-2.0.html).
+Geist, Copyright (c) 2021 [Chris Yee](https://chrisyee.ca) - Released under the [GPL v2.0 license](https://www.gnu.org/licenses/gpl-2.0.html).
