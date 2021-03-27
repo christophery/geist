@@ -82,7 +82,7 @@ $geist_author_url = get_author_posts_url( get_the_author_meta( 'ID' ), get_the_a
 			        	            </header>
 
 			        	            <section class="post-card-excerpt">
-			        	                <p><?php the_excerpt(); ?></p>
+			        	                <?php the_excerpt(); ?>
 			        	            </section>
 
 			        	        </a>

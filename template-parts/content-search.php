@@ -40,7 +40,7 @@ if( $geist_categories ){
             </header>
 
             <section class="post-card-excerpt">
-                <p><?php esc_html( the_excerpt() ); ?></p>
+                <?php esc_html( the_excerpt() ); ?>
             </section>
 
         </a>
