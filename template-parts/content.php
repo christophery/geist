@@ -24,7 +24,7 @@ if( $geist_categories ){
 
     <?php if ( has_post_thumbnail() ) { ?>
     <a class="post-card-image-link" href="<?php esc_url( the_permalink() ); ?>" aria-label="<?php printf( esc_html__( 'Read more about %s', 'geist' ), get_the_title() ); ?>">
-        <?php the_post_thumbnail('medium_large',array('class' => 'post-card-image')); ?>
+        <?php the_post_thumbnail('medium_large', array('class' => 'post-card-image')); ?>
     </a>
     <?php } ?>
 
