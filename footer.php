@@ -19,6 +19,9 @@
                     <?php if ( get_theme_mod( 'geist_social_github') ){ ?>
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_github') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'GitHub', 'geist' ); ?></a>
                     <?php } ?>
+                    <?php if ( get_theme_mod( 'geist_social_mastodon') ){ ?>
+                        <a href="<?php echo esc_url( get_theme_mod( 'geist_social_mastodon') ); ?>" target="_blank" rel="me"><?php esc_html_e( 'Mastodon', 'geist' ); ?></a>
+                    <?php } ?>
                     <?php if ( get_theme_mod( 'geist_social_linkedin') ){ ?>
                         <a href="<?php echo esc_url( get_theme_mod( 'geist_social_linkedin') ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'LinkedIn', 'geist' ); ?></a>
                     <?php } ?>

@@ -39,6 +39,9 @@ $geist_blog_name = get_bloginfo( 'name' );
             <?php if ( get_theme_mod( 'geist_social_github') ){ ?>
                 <a class="social-link social-link-github" href="<?php echo esc_url( get_theme_mod( 'geist_social_github') ); ?>" title="<?php esc_html_e( 'GitHub', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/github'); ?></a>
             <?php } ?>
+            <?php if ( get_theme_mod( 'geist_social_mastodon') ){ ?>
+                <a class="social-link social-link-mastodon" href="<?php echo esc_url( get_theme_mod( 'geist_social_mastodon') ); ?>" title="<?php esc_html_e( 'Mastodon', 'geist' ); ?>" target="_blank" rel="me"><?php get_template_part('template-parts/icons/mastodon'); ?></a>
+            <?php } ?>
             <?php if ( get_theme_mod( 'geist_social_linkedin') ){ ?>
                 <a class="social-link social-link-linkedin" href="<?php echo esc_url( get_theme_mod( 'geist_social_linkedin') ); ?>" title="<?php esc_html_e( 'LinkedIn', 'geist' ); ?>" target="_blank" rel="noopener"><?php get_template_part('template-parts/icons/linkedin'); ?></a>
             <?php } ?>

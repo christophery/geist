@@ -355,6 +355,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     height: 1.7rem;
 }
 
+.social-link-mastodon svg{
+    height: 1.6rem;
+}
+
 .social-link-linkedin svg{
     height: 1.6rem;
 }

@@ -100,7 +100,7 @@ add_action( 'after_setup_theme', 'geist_content_width', 0 );
  */
 function geist_scripts() {
 	wp_enqueue_style( 'geist-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'geist-screen', get_template_directory_uri() . '/built/screen.css', array(),'20210210' );
+	wp_enqueue_style( 'geist-screen', get_template_directory_uri() . '/built/screen.css', array(),'20221120' );
 
 	// Dark mode
 	if ( get_theme_mod( 'geist_dark_mode_toggle') === 'auto' ){

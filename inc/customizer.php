@@ -66,6 +66,11 @@ function geist_customize_register( $wp_customize ) {
 			'placeholder' => 'https://github.com/username'
 		),
 		array(
+			'title' => 'Mastodon',
+			'id' => 'mastodon',
+			'placeholder' => 'https://host.tld/@username'
+		),
+		array(
 			'title' => 'LinkedIn',
 			'id' => 'linkedin',
 			'placeholder' => 'https://linkedin.com/in/username'
