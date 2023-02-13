@@ -1,10 +1,10 @@
 # Geist
 
-Geist is a personal blogging theme for WordPress. This theme is a port of [Casper](https://github.com/TryGhost/Casper) the default theme for the [Ghost](https://ghost.org/) blogging platform.
+Geist is a personal blogging theme for WordPress. This theme is a port of the [Casper 2.0](https://github.com/TryGhost/Casper) theme for WordPress.
 
-Feel free to [let me know](http://www.twitter.com/cmyee) if you use Geist in one of your websites.
+Feel free to [contact me](https://chrisyee.ca/contact/) if you use Geist in one of your websites.
 
-[View Demo](https://chrisyee.ca/) | [Download Theme](https://github.com/christophery/geist/releases)
+[Download Theme](https://github.com/christophery/geist/releases)
 
 ![Geist Screenshot](screenshot.png?raw=true)
 
